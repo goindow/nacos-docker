@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  nacos:
+    image: "nacos/nacos-server:2.0.0"
+    ports:
+      - "8848:8848"  # HTTP
+#      - "9848:9848"  # gRPC
+    volumes:
+      - ./conf/custom.properties:/home/nacos/init.d/custom.properties    # 自定义配置
+      - ./logs:/home/nacos/logs         # 日志
+      - ./data:/home/nacos/data         # 持久化（使用内嵌分布式数据库）
+#      - /etc/localtime:/etc/localtime
+#    restart: always
+    environment:
+      - MODE=standalone
+      - EMBEDDED_STORAGE=embedded       # 使用内嵌分布式数据库持久化
+      - NACOS_SERVER_IP=172.18.2.160    # 指定宿主机网卡 IP，否则使用 docker 内部 IP
