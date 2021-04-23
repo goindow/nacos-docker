@@ -13,6 +13,6 @@ services:
 #      - /etc/localtime:/etc/localtime
 #    restart: always
     environment:
+      # 更多环境变量参考，https://hub.fastgit.org/nacos-group/nacos-docker/blob/master/README_ZH.md         
       - MODE=standalone
       - EMBEDDED_STORAGE=embedded       # 使用内嵌分布式数据库持久化
-      - NACOS_SERVER_IP=172.18.2.160    # 指定宿主机网卡 IP，否则使用 docker 内部 IP
