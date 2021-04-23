@@ -4,12 +4,12 @@ services:
   nacos:
     image: "nacos/nacos-server:2.0.0"
     ports:
-      - "8848:8848"    # port，    HTTP client -> server
+      - "8848:8848"    # port HTTP client -> server
 #      - "9848:9848"    # port+1000 gRPC client -> server
     volumes:
       - ./conf/custom.properties:/home/nacos/init.d/custom.properties    # 自定义配置
       - ./data:/home/nacos/data    # 持久化（使用内嵌分布式数据库）
-      - ./logs:/home/nacos/logs    # 日志
+      - ./logs:/home/nacos/logs
 #      - /etc/localtime:/etc/localtime
 #    restart: always
     environment:
