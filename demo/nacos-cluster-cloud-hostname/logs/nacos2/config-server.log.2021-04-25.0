@@ -1,0 +1,64 @@
+2021-04-25 16:27:07,717 INFO notifyConnectTimeout:200
+
+2021-04-25 16:27:07,730 INFO notifySocketTimeout:8000
+
+2021-04-25 16:27:07,731 INFO isHealthCheck:true
+
+2021-04-25 16:27:07,732 INFO maxHealthCheckFailCount:12
+
+2021-04-25 16:27:07,735 INFO maxContent:10485760
+
+2021-04-25 16:27:07,737 INFO spring.datasource.platform:""
+
+2021-04-25 16:27:28,701 INFO use local db service for init
+
+2021-04-25 16:27:31,489 WARN Lexical error at line 4, column 66.  Encountered: <EOF> after : "".
+
+2021-04-25 16:27:31,508 WARN Syntax error: Encountered "*" at line 1, column 1.
+
+2021-04-25 16:27:32,669 WARN Lexical error at line 4, column 13.  Encountered: "`" (96), after : "".
+
+2021-04-25 16:27:32,672 WARN Lexical error at line 1, column 13.  Encountered: "`" (96), after : "".
+
+2021-04-25 16:27:32,673 WARN Lexical error at line 1, column 13.  Encountered: "`" (96), after : "".
+
+2021-04-25 16:27:32,675 WARN Lexical error at line 1, column 13.  Encountered: "`" (96), after : "".
+
+2021-04-25 16:27:32,675 WARN use local db service for reopenDerby
+
+2021-04-25 16:27:34,172 WARN Lexical error at line 4, column 66.  Encountered: <EOF> after : "".
+
+2021-04-25 16:27:34,175 WARN Syntax error: Encountered "*" at line 1, column 1.
+
+2021-04-25 16:27:34,862 WARN Lexical error at line 4, column 13.  Encountered: "`" (96), after : "".
+
+2021-04-25 16:27:34,863 WARN Lexical error at line 1, column 13.  Encountered: "`" (96), after : "".
+
+2021-04-25 16:27:34,864 WARN Lexical error at line 1, column 13.  Encountered: "`" (96), after : "".
+
+2021-04-25 16:27:34,866 WARN Lexical error at line 1, column 13.  Encountered: "`" (96), after : "".
+
+2021-04-25 16:27:35,483 INFO use DistributedTransactionServicesImpl
+
+2021-04-25 16:27:42,517 WARN DumpService start
+
+2021-04-25 16:27:42,553 INFO start clear all config-info.
+
+2021-04-25 16:27:42,562 WARN clear all config-info failed.
+
+2021-04-25 16:27:42,565 WARN clear all config-info-tenant failed.
+
+2021-04-25 16:27:44,165 INFO start clear all config-info-beta.
+
+2021-04-25 16:27:44,167 WARN clear all config-info-beta failed.
+
+2021-04-25 16:27:44,169 WARN clear all config-info-beta-tenant failed.
+
+2021-04-25 16:27:44,302 INFO start clear all config-info-tag.
+
+2021-04-25 16:27:44,303 WARN clear all config-info-tag failed.
+
+2021-04-25 16:27:44,305 WARN clear all config-info-tag-tenant failed.
+
+2021-04-25 16:27:44,509 WARN initialDelay:139
+

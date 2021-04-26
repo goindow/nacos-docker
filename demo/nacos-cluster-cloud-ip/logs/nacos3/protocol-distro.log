@@ -1,0 +1,156 @@
+2021-04-26 11:27:10,023 INFO [DISTRO-INIT] waiting distro data storage register...
+
+2021-04-26 11:27:11,033 INFO [DISTRO-INIT] waiting distro data storage register...
+
+2021-04-26 11:27:12,036 INFO [DISTRO-INIT] waiting distro data storage register...
+
+2021-04-26 11:27:13,040 INFO [DISTRO-INIT] waiting distro data storage register...
+
+2021-04-26 11:27:14,042 INFO [DISTRO-INIT] waiting distro data storage register...
+
+2021-04-26 11:27:15,045 INFO [DISTRO-INIT] waiting distro data storage register...
+
+2021-04-26 11:27:16,056 INFO [DISTRO-INIT] waiting distro data storage register...
+
+2021-04-26 11:27:17,072 INFO [DISTRO-INIT] waiting distro data storage register...
+
+2021-04-26 11:27:18,086 INFO [DISTRO-INIT] load snapshot com.alibaba.nacos.naming.iplist. from 192.168.100.11:8848
+
+2021-04-26 11:27:18,099 ERROR [DISTRO-INIT] load snapshot com.alibaba.nacos.naming.iplist. from 192.168.100.11:8848 failed.
+
+com.alibaba.nacos.core.distributed.distro.exception.DistroException: [DISTRO-EXCEPTION]Get snapshot from 192.168.100.11:8848 failed.
+	at com.alibaba.nacos.naming.consistency.ephemeral.distro.component.DistroHttpAgent.getDatumSnapshot(DistroHttpAgent.java:101)
+	at com.alibaba.nacos.core.distributed.distro.task.load.DistroLoadDataTask.loadAllDataSnapshotFromRemote(DistroLoadDataTask.java:103)
+	at com.alibaba.nacos.core.distributed.distro.task.load.DistroLoadDataTask.load(DistroLoadDataTask.java:87)
+	at com.alibaba.nacos.core.distributed.distro.task.load.DistroLoadDataTask.run(DistroLoadDataTask.java:63)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: failed to req API: http://192.168.100.11:8848/nacos/v1/ns/distro/datums. code: 500 msg: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.100.11:8848 [/192.168.100.11] failed: Connection refused (Connection refused)
+	at com.alibaba.nacos.naming.misc.NamingProxy.getAllData(NamingProxy.java:150)
+	at com.alibaba.nacos.naming.consistency.ephemeral.distro.component.DistroHttpAgent.getDatumSnapshot(DistroHttpAgent.java:98)
+	... 10 common frames omitted
+2021-04-26 11:27:18,108 INFO [DISTRO-INIT] load snapshot com.alibaba.nacos.naming.iplist. from 192.168.100.12:8848
+
+2021-04-26 11:27:18,118 ERROR [DISTRO-INIT] load snapshot com.alibaba.nacos.naming.iplist. from 192.168.100.12:8848 failed.
+
+com.alibaba.nacos.core.distributed.distro.exception.DistroException: [DISTRO-EXCEPTION]Get snapshot from 192.168.100.12:8848 failed.
+	at com.alibaba.nacos.naming.consistency.ephemeral.distro.component.DistroHttpAgent.getDatumSnapshot(DistroHttpAgent.java:101)
+	at com.alibaba.nacos.core.distributed.distro.task.load.DistroLoadDataTask.loadAllDataSnapshotFromRemote(DistroLoadDataTask.java:103)
+	at com.alibaba.nacos.core.distributed.distro.task.load.DistroLoadDataTask.load(DistroLoadDataTask.java:87)
+	at com.alibaba.nacos.core.distributed.distro.task.load.DistroLoadDataTask.run(DistroLoadDataTask.java:63)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: failed to req API: http://192.168.100.12:8848/nacos/v1/ns/distro/datums. code: 500 msg: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.100.12:8848 [/192.168.100.12] failed: Connection refused (Connection refused)
+	at com.alibaba.nacos.naming.misc.NamingProxy.getAllData(NamingProxy.java:150)
+	at com.alibaba.nacos.naming.consistency.ephemeral.distro.component.DistroHttpAgent.getDatumSnapshot(DistroHttpAgent.java:98)
+	... 10 common frames omitted
+2021-04-26 11:27:18,121 INFO [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 192.168.100.11:8848
+
+2021-04-26 11:27:18,123 ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 192.168.100.11:8848 failed.
+
+com.alibaba.nacos.core.distributed.distro.exception.DistroException: [DISTRO-EXCEPTION][DISTRO-FAILED] Get distro snapshot failed! 
+	at com.alibaba.nacos.naming.consistency.ephemeral.distro.v2.DistroClientTransportAgent.getDatumSnapshot(DistroClientTransportAgent.java:182)
+	at com.alibaba.nacos.core.distributed.distro.task.load.DistroLoadDataTask.loadAllDataSnapshotFromRemote(DistroLoadDataTask.java:103)
+	at com.alibaba.nacos.core.distributed.distro.task.load.DistroLoadDataTask.load(DistroLoadDataTask.java:87)
+	at com.alibaba.nacos.core.distributed.distro.task.load.DistroLoadDataTask.run(DistroLoadDataTask.java:63)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.alibaba.nacos.api.exception.NacosException: No rpc client related to member: Member{ip='192.168.100.11', port=8848, state=UP, extendInfo={raftPort=7848}}
+	at com.alibaba.nacos.core.cluster.remote.ClusterRpcClientProxy.sendRequest(ClusterRpcClientProxy.java:176)
+	at com.alibaba.nacos.core.cluster.remote.ClusterRpcClientProxy.sendRequest(ClusterRpcClientProxy.java:159)
+	at com.alibaba.nacos.naming.consistency.ephemeral.distro.v2.DistroClientTransportAgent.getDatumSnapshot(DistroClientTransportAgent.java:173)
+	... 10 common frames omitted
+2021-04-26 11:27:18,131 INFO [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 192.168.100.12:8848
+
+2021-04-26 11:27:18,132 ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 192.168.100.12:8848 failed.
+
+com.alibaba.nacos.core.distributed.distro.exception.DistroException: [DISTRO-EXCEPTION][DISTRO-FAILED] Get distro snapshot failed! 
+	at com.alibaba.nacos.naming.consistency.ephemeral.distro.v2.DistroClientTransportAgent.getDatumSnapshot(DistroClientTransportAgent.java:182)
+	at com.alibaba.nacos.core.distributed.distro.task.load.DistroLoadDataTask.loadAllDataSnapshotFromRemote(DistroLoadDataTask.java:103)
+	at com.alibaba.nacos.core.distributed.distro.task.load.DistroLoadDataTask.load(DistroLoadDataTask.java:87)
+	at com.alibaba.nacos.core.distributed.distro.task.load.DistroLoadDataTask.run(DistroLoadDataTask.java:63)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.alibaba.nacos.api.exception.NacosException: No rpc client related to member: Member{ip='192.168.100.12', port=8848, state=UP, extendInfo={raftPort=7848}}
+	at com.alibaba.nacos.core.cluster.remote.ClusterRpcClientProxy.sendRequest(ClusterRpcClientProxy.java:176)
+	at com.alibaba.nacos.core.cluster.remote.ClusterRpcClientProxy.sendRequest(ClusterRpcClientProxy.java:159)
+	at com.alibaba.nacos.naming.consistency.ephemeral.distro.v2.DistroClientTransportAgent.getDatumSnapshot(DistroClientTransportAgent.java:173)
+	... 10 common frames omitted
+2021-04-26 11:27:20,034 WARN data storage DistroDataStorageImpl has not finished initial step, do not send verify data
+
+2021-04-26 11:27:20,043 WARN data storage DistroClientDataProcessor has not finished initial step, do not send verify data
+
+2021-04-26 11:27:25,051 WARN data storage DistroDataStorageImpl has not finished initial step, do not send verify data
+
+2021-04-26 11:27:25,053 WARN data storage DistroClientDataProcessor has not finished initial step, do not send verify data
+
+2021-04-26 11:27:30,054 WARN data storage DistroDataStorageImpl has not finished initial step, do not send verify data
+
+2021-04-26 11:27:30,055 WARN data storage DistroClientDataProcessor has not finished initial step, do not send verify data
+
+2021-04-26 11:27:35,056 WARN data storage DistroDataStorageImpl has not finished initial step, do not send verify data
+
+2021-04-26 11:27:35,059 WARN data storage DistroClientDataProcessor has not finished initial step, do not send verify data
+
+2021-04-26 11:27:40,042 WARN data storage DistroDataStorageImpl has not finished initial step, do not send verify data
+
+2021-04-26 11:27:40,048 WARN data storage DistroClientDataProcessor has not finished initial step, do not send verify data
+
+2021-04-26 11:27:45,051 WARN data storage DistroDataStorageImpl has not finished initial step, do not send verify data
+
+2021-04-26 11:27:45,053 WARN data storage DistroClientDataProcessor has not finished initial step, do not send verify data
+
+2021-04-26 11:27:50,055 WARN data storage DistroDataStorageImpl has not finished initial step, do not send verify data
+
+2021-04-26 11:27:50,057 WARN data storage DistroClientDataProcessor has not finished initial step, do not send verify data
+
+2021-04-26 11:27:55,058 WARN data storage DistroDataStorageImpl has not finished initial step, do not send verify data
+
+2021-04-26 11:27:55,061 WARN data storage DistroClientDataProcessor has not finished initial step, do not send verify data
+
+2021-04-26 11:28:00,062 WARN data storage DistroDataStorageImpl has not finished initial step, do not send verify data
+
+2021-04-26 11:28:00,064 WARN data storage DistroClientDataProcessor has not finished initial step, do not send verify data
+
+2021-04-26 11:28:05,065 WARN data storage DistroDataStorageImpl has not finished initial step, do not send verify data
+
+2021-04-26 11:28:05,068 WARN data storage DistroClientDataProcessor has not finished initial step, do not send verify data
+
+2021-04-26 11:28:10,049 WARN data storage DistroDataStorageImpl has not finished initial step, do not send verify data
+
+2021-04-26 11:28:10,052 WARN data storage DistroClientDataProcessor has not finished initial step, do not send verify data
+
+2021-04-26 11:28:15,054 WARN data storage DistroDataStorageImpl has not finished initial step, do not send verify data
+
+2021-04-26 11:28:15,056 WARN data storage DistroClientDataProcessor has not finished initial step, do not send verify data
+
+2021-04-26 11:28:18,107 INFO [DISTRO-INIT] load snapshot com.alibaba.nacos.naming.iplist. from 192.168.100.11:8848
+
+2021-04-26 11:28:18,133 INFO [DISTRO-INIT] load snapshot com.alibaba.nacos.naming.iplist. from 192.168.100.11:8848 result: true
+
+2021-04-26 11:28:18,135 INFO [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 192.168.100.11:8848
+
+2021-04-26 11:28:18,162 INFO [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 192.168.100.11:8848 result: true
+
+2021-04-26 11:28:18,163 INFO [DISTRO-INIT] load snapshot data success
+

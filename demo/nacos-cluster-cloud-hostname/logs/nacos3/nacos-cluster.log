@@ -1,0 +1,92 @@
+2021-04-26 10:10:51,846 INFO Current addressing mode selection : FileConfigMemberLookup
+
+2021-04-26 10:10:51,863 WARN [serverlist] updated to : [Member{ip='nacos3', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=DOWN, extendInfo={raftPort=7848}}, Member{ip='nacos1', port=8848, state=DOWN, extendInfo={raftPort=7848}}]
+
+2021-04-26 10:10:51,896 WARN [serverlist] updated to : [Member{ip='nacos3', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos1', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2021-04-26 10:10:51,926 WARN [serverlist] updated to : [Member{ip='nacos3', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos1', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2021-04-26 10:11:05,192 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[Member{ip='nacos1', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=UP, extendInfo={raftPort=7848}}] 
+
+2021-04-26 10:11:19,037 INFO This node is ready to provide external services
+
+2021-04-26 10:11:19,751 INFO start a new rpc client to member - > : Member{ip='nacos2', port=8848, state=UP, extendInfo={lastRefreshTime=1619403079739, raftMetaData={metaDataMap={nacos_config={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=3}, naming_instance_metadata={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=2}, naming_persistent_service={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=3}, naming_persistent_service_v2={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=2}, naming_service_metadata={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=2}}}, raftPort=7848, readyToUpgrade=true, version=2.0.0}}
+
+2021-04-26 10:11:23,062 INFO start a new rpc client to member - > : Member{ip='nacos1', port=8848, state=UP, extendInfo={lastRefreshTime=1619403083060, raftMetaData={metaDataMap={nacos_config={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=3}, naming_instance_metadata={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=2}, naming_persistent_service={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=3}, naming_persistent_service_v2={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=2}, naming_service_metadata={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=2}}}, raftPort=7848, readyToUpgrade=true, version=2.0.0}}
+
+2021-04-26 10:25:12,551 INFO Current addressing mode selection : FileConfigMemberLookup
+
+2021-04-26 10:28:36,886 INFO Current addressing mode selection : FileConfigMemberLookup
+
+2021-04-26 10:28:36,896 WARN [serverlist] self ip Member{ip='192.168.0.3', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.0}} not in serverlist [Member{ip='192.168.0.3', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.0}}, Member{ip='nacos3', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos1', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='集群节点列表', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2021-04-26 10:28:36,900 WARN [serverlist] updated to : [Member{ip='192.168.0.3', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.0}}, Member{ip='nacos3', port=8848, state=DOWN, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=DOWN, extendInfo={raftPort=7848}}, Member{ip='nacos1', port=8848, state=DOWN, extendInfo={raftPort=7848}}, Member{ip='集群节点列表', port=8848, state=DOWN, extendInfo={raftPort=7848}}]
+
+2021-04-26 10:28:36,970 WARN [serverlist] updated to : [Member{ip='192.168.0.3', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos3', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos1', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='集群节点列表', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2021-04-26 10:28:36,974 WARN [serverlist] updated to : [Member{ip='192.168.0.3', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos3', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos1', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='集群节点列表', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2021-04-26 11:00:06,922 INFO Current addressing mode selection : FileConfigMemberLookup
+
+2021-04-26 11:00:06,956 WARN [serverlist] updated to : [Member{ip='nacos3', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=DOWN, extendInfo={raftPort=7848}}, Member{ip='nacos1', port=8848, state=DOWN, extendInfo={raftPort=7848}}]
+
+2021-04-26 11:00:07,001 WARN [serverlist] updated to : [Member{ip='nacos3', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos1', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2021-04-26 11:00:18,482 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[Member{ip='nacos1', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=UP, extendInfo={raftPort=7848}}] 
+
+2021-04-26 11:00:29,983 INFO This node is ready to provide external services
+
+2021-04-26 11:00:34,699 INFO start a new rpc client to member - > : Member{ip='nacos1', port=8848, state=UP, extendInfo={lastRefreshTime=1619406034685, raftMetaData={metaDataMap={nacos_config={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=4}, naming_instance_metadata={leader=nacos3:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=3}, naming_persistent_service={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=4}, naming_service_metadata={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=3}}}, raftPort=7848, readyToUpgrade=true, version=2.0.0}}
+
+2021-04-26 11:00:35,459 INFO start a new rpc client to member - > : Member{ip='nacos2', port=8848, state=UP, extendInfo={lastRefreshTime=1619406035457, naming={voteFor=nacos2:8848, ip=nacos2:8848, heartbeatDueMs=5000, term=2, leaderDueMs=16358, state=LEADER}, raftMetaData={metaDataMap={nacos_config={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=4}, naming_instance_metadata={leader=nacos3:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=3}, naming_persistent_service={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=4}, naming_service_metadata={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=3}}}, raftPort=7848, readyToUpgrade=true, version=2.0.0}}
+
+2021-04-26 11:03:08,042 ERROR failed to report new info to target node : nacos2:8848, error : caused: Timeout connecting to [nacos2/192.168.16.3:8848];
+
+2021-04-26 11:03:13,023 ERROR failed to report new info to target node : nacos2:8848, error : caused: Timeout connecting to [nacos2/192.168.16.3:8848];
+
+2021-04-26 11:03:16,026 ERROR failed to report new info to target node : nacos2:8848, error : caused: Timeout connecting to [nacos2/192.168.16.3:8848];
+
+2021-04-26 11:03:20,028 ERROR failed to report new info to target node : nacos2:8848, error : caused: Timeout connecting to [nacos2/192.168.16.3:8848];
+
+2021-04-26 11:03:24,032 ERROR failed to report new info to target node : nacos2:8848, error : caused: Timeout connecting to [nacos2/192.168.16.3:8848];
+
+2021-04-26 11:03:28,036 ERROR failed to report new info to target node : nacos2:8848, error : caused: Timeout connecting to [nacos2/192.168.16.3:8848];
+
+2021-04-26 11:03:32,039 ERROR failed to report new info to target node : nacos2:8848, error : caused: Timeout connecting to [nacos2/192.168.16.3:8848];
+
+2021-04-26 11:03:35,040 ERROR failed to report new info to target node : nacos2:8848, error : caused: nacos2;
+
+2021-04-26 11:03:36,047 ERROR failed to report new info to target node : nacos2:8848, error : caused: Timeout connecting to [nacos2/192.168.16.3:8848];
+
+2021-04-26 11:03:39,045 ERROR failed to report new info to target node : nacos2:8848, error : caused: nacos2;
+
+2021-04-26 11:03:43,029 ERROR failed to report new info to target node : nacos2:8848, error : caused: nacos2;
+
+2021-04-26 11:03:47,037 ERROR failed to report new info to target node : nacos2:8848, error : caused: nacos2;
+
+2021-04-26 11:03:51,042 ERROR failed to report new info to target node : nacos2:8848, error : caused: nacos2;
+
+2021-04-26 11:03:55,048 ERROR failed to report new info to target node : nacos2:8848, error : caused: nacos2;
+
+2021-04-26 11:03:59,052 ERROR failed to report new info to target node : nacos2:8848, error : caused: nacos2;
+
+2021-04-26 11:04:03,058 ERROR failed to report new info to target node : nacos2:8848, error : caused: nacos2;
+
+2021-04-26 11:04:07,064 ERROR failed to report new info to target node : nacos2:8848, error : caused: nacos2;
+
+2021-04-26 11:04:11,047 ERROR failed to report new info to target node : nacos2:8848, error : caused: nacos2;
+
+2021-04-26 11:04:15,051 ERROR failed to report new info to target node : nacos2:8848, error : caused: nacos2;
+
+2021-04-26 11:04:19,055 ERROR failed to report new info to target node : nacos2:8848, error : caused: nacos2;
+
+2021-04-26 11:04:23,060 ERROR failed to report new info to target node : nacos2:8848, error : caused: nacos2;
+
+2021-04-26 11:04:27,065 ERROR failed to report new info to target node : nacos2:8848, error : caused: Connection refused;
+
+2021-04-26 11:04:31,067 ERROR failed to report new info to target node : nacos2:8848, error : caused: Connection refused;
+
+2021-04-26 11:04:35,069 ERROR failed to report new info to target node : nacos2:8848, error : caused: Connection refused;
+
+2021-04-26 11:04:39,070 ERROR failed to report new info to target node : nacos2:8848, error : caused: Connection refused;
+

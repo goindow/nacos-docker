@@ -1,0 +1,806 @@
+2021-04-26 10:10:52,615 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2021-04-26 10:10:52,897 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2021-04-26 10:10:58,505 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2021-04-26 10:10:58,508 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2021-04-26 10:10:58,510 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2021-04-26 10:10:58,517 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2021-04-26 10:10:58,527 INFO The number of active nodes increment to 1.
+
+2021-04-26 10:10:58,825 INFO Starts FSMCaller successfully.
+
+2021-04-26 10:10:58,839 WARN No data for snapshot reader /home/nacos/data/protocol/raft/nacos_config/snapshot.
+
+2021-04-26 10:10:58,841 INFO Node <nacos_config/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 10:10:58,876 INFO Node <nacos_config/nacos2:7848> init, term=2, lastLogId=LogId [index=2, term=2], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 10:10:58,880 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 10:10:58,880 INFO Start the RaftGroupService successfully.
+
+2021-04-26 10:10:59,130 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 10:10:59,168 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 10:10:59,713 INFO The number of active nodes increment to 2.
+
+2021-04-26 10:11:00,093 INFO Starts FSMCaller successfully.
+
+2021-04-26 10:11:00,101 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service/snapshot.
+
+2021-04-26 10:11:00,102 INFO Node <naming_persistent_service/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 10:11:00,121 INFO Node <naming_persistent_service/nacos2:7848> init, term=2, lastLogId=LogId [index=2, term=2], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 10:11:00,126 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 10:11:00,128 INFO Start the RaftGroupService successfully.
+
+2021-04-26 10:11:00,196 ERROR Fail to connect nacos3:7848, remoting exception: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 817825839ns. [buffered_nanos=824864431, waiting_for_connection].
+
+2021-04-26 10:11:00,198 ERROR Fail to connect peer nacos3:7848 to get leader for group nacos_config.
+
+2021-04-26 10:11:00,200 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 10:11:00,201 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 10:11:01,021 WARN Channel in TRANSIENT_FAILURE state: nacos2:7848.
+
+2021-04-26 10:11:01,032 WARN Channel in SHUTDOWN state: nacos2:7848.
+
+2021-04-26 10:11:04,454 INFO Node <nacos_config/nacos2:7848> term 2 start preVote.
+
+2021-04-26 10:11:04,466 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 10:11:04,466 INFO Peer nacos3:7848 is connected.
+
+2021-04-26 10:11:04,467 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 10:11:04,487 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 10:11:04,489 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 10:11:04,490 INFO Peer nacos1:7848 is connected.
+
+2021-04-26 10:11:04,508 INFO Node <nacos_config/nacos2:7848> received PreVoteResponse from nacos3:7848, term=1, granted=true.
+
+2021-04-26 10:11:04,511 INFO Node <nacos_config/nacos2:7848> start vote and grant vote self, term=2.
+
+2021-04-26 10:11:04,539 INFO Save raft meta, path=/home/nacos/data/protocol/raft/nacos_config/meta-data, term=3, votedFor=nacos2:7848, cost time=19 ms
+
+2021-04-26 10:11:04,540 WARN Node <nacos_config/nacos2:7848> received invalid PreVoteResponse from nacos1:7848, state not in STATE_FOLLOWER but STATE_CANDIDATE.
+
+2021-04-26 10:11:04,550 INFO Node <nacos_config/nacos2:7848> become leader of group, term=3, conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 10:11:04,563 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos3:7848, type=Follower]@nacos3:7848 is started
+
+2021-04-26 10:11:04,570 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos1:7848, type=Follower]@nacos1:7848 is started
+
+2021-04-26 10:11:04,581 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2021-04-26 10:11:04,586 WARN Node <nacos_config/nacos2:7848> received invalid RequestVoteResponse from nacos1:7848, state not in STATE_CANDIDATE but STATE_LEADER.
+
+2021-04-26 10:11:04,672 INFO onLeaderStart: term=3.
+
+2021-04-26 10:11:05,262 INFO Node <naming_persistent_service/nacos2:7848> term 2 start preVote.
+
+2021-04-26 10:11:05,267 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 10:11:05,267 INFO Peer nacos3:7848 is connected.
+
+2021-04-26 10:11:05,267 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 10:11:05,349 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 10:11:05,350 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 10:11:05,349 INFO Peer nacos1:7848 is connected.
+
+2021-04-26 10:11:05,436 INFO Node <naming_persistent_service/nacos2:7848> received PreVoteRequest from nacos3:7848, term=2, currTerm=2, granted=false, requestLastLogId=LogId [index=1, term=1], lastLogId=LogId [index=2, term=2].
+
+2021-04-26 10:11:05,594 INFO Node <naming_persistent_service/nacos2:7848> received PreVoteResponse from nacos1:7848, term=2, granted=true.
+
+2021-04-26 10:11:05,595 INFO Node <naming_persistent_service/nacos2:7848> start vote and grant vote self, term=2.
+
+2021-04-26 10:11:05,687 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service/meta-data, term=3, votedFor=nacos2:7848, cost time=74 ms
+
+2021-04-26 10:11:05,688 WARN Node <naming_persistent_service/nacos2:7848> received invalid PreVoteResponse from nacos3:7848, state not in STATE_FOLLOWER but STATE_CANDIDATE.
+
+2021-04-26 10:11:05,696 INFO Node <naming_persistent_service/nacos2:7848> become leader of group, term=3, conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 10:11:05,697 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos3:7848, type=Follower]@nacos3:7848 is started
+
+2021-04-26 10:11:05,701 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos1:7848, type=Follower]@nacos1:7848 is started
+
+2021-04-26 10:11:05,719 WARN Node <naming_persistent_service/nacos2:7848> received invalid RequestVoteResponse from nacos3:7848, state not in STATE_CANDIDATE but STATE_LEADER.
+
+2021-04-26 10:11:05,776 INFO onLeaderStart: term=3.
+
+2021-04-26 10:11:06,555 INFO The number of active nodes increment to 3.
+
+2021-04-26 10:11:06,829 INFO Starts FSMCaller successfully.
+
+2021-04-26 10:11:06,833 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot.
+
+2021-04-26 10:11:06,834 INFO Node <naming_persistent_service_v2/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 10:11:06,835 INFO Node <naming_persistent_service_v2/nacos2:7848> init, term=1, lastLogId=LogId [index=1, term=1], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 10:11:06,840 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 10:11:06,840 INFO Start the RaftGroupService successfully.
+
+2021-04-26 10:11:07,007 INFO The number of active nodes increment to 4.
+
+2021-04-26 10:11:07,525 INFO Starts FSMCaller successfully.
+
+2021-04-26 10:11:07,529 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot.
+
+2021-04-26 10:11:07,530 INFO Node <naming_instance_metadata/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 10:11:07,532 INFO Node <naming_instance_metadata/nacos2:7848> init, term=1, lastLogId=LogId [index=1, term=1], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 10:11:07,533 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 10:11:07,533 INFO Start the RaftGroupService successfully.
+
+2021-04-26 10:11:07,543 INFO The number of active nodes increment to 5.
+
+2021-04-26 10:11:07,783 INFO Starts FSMCaller successfully.
+
+2021-04-26 10:11:07,810 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_service_metadata/snapshot.
+
+2021-04-26 10:11:07,813 INFO Node <naming_service_metadata/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 10:11:07,819 INFO Node <naming_service_metadata/nacos2:7848> init, term=1, lastLogId=LogId [index=1, term=1], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 10:11:07,821 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 10:11:07,822 INFO Start the RaftGroupService successfully.
+
+2021-04-26 10:11:12,326 INFO Node <naming_persistent_service_v2/nacos2:7848> term 1 start preVote.
+
+2021-04-26 10:11:12,330 INFO Peer nacos3:7848 is connected.
+
+2021-04-26 10:11:12,330 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 10:11:12,333 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 10:11:12,410 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 10:11:12,410 INFO Peer nacos1:7848 is connected.
+
+2021-04-26 10:11:12,415 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 10:11:12,484 INFO Node <naming_persistent_service_v2/nacos2:7848> received PreVoteResponse from nacos3:7848, term=0, granted=true.
+
+2021-04-26 10:11:12,485 INFO Node <naming_persistent_service_v2/nacos2:7848> start vote and grant vote self, term=1.
+
+2021-04-26 10:11:12,512 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=2, votedFor=nacos2:7848, cost time=22 ms
+
+2021-04-26 10:11:12,519 WARN Node <naming_persistent_service_v2/nacos2:7848> received invalid PreVoteResponse from nacos1:7848, state not in STATE_FOLLOWER but STATE_CANDIDATE.
+
+2021-04-26 10:11:12,564 INFO Node <naming_persistent_service_v2/nacos2:7848> become leader of group, term=2, conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 10:11:12,565 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos3:7848, type=Follower]@nacos3:7848 is started
+
+2021-04-26 10:11:12,583 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos1:7848, type=Follower]@nacos1:7848 is started
+
+2021-04-26 10:11:12,593 WARN Node <naming_persistent_service_v2/nacos2:7848> received invalid RequestVoteResponse from nacos3:7848, state not in STATE_CANDIDATE but STATE_LEADER.
+
+2021-04-26 10:11:12,694 INFO onLeaderStart: term=2.
+
+2021-04-26 10:11:13,458 INFO Node <naming_service_metadata/nacos2:7848> term 1 start preVote.
+
+2021-04-26 10:11:13,461 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 10:11:13,461 INFO Peer nacos3:7848 is connected.
+
+2021-04-26 10:11:13,462 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 10:11:13,475 INFO Node <naming_instance_metadata/nacos2:7848> term 1 start preVote.
+
+2021-04-26 10:11:13,478 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 10:11:13,478 INFO Peer nacos3:7848 is connected.
+
+2021-04-26 10:11:13,485 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 10:11:13,518 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 10:11:13,518 INFO Peer nacos1:7848 is connected.
+
+2021-04-26 10:11:13,518 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 10:11:13,541 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 10:11:13,541 INFO Peer nacos1:7848 is connected.
+
+2021-04-26 10:11:13,542 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 10:11:13,642 INFO Node <naming_service_metadata/nacos2:7848> received PreVoteResponse from nacos3:7848, term=0, granted=true.
+
+2021-04-26 10:11:13,653 INFO Node <naming_service_metadata/nacos2:7848> start vote and grant vote self, term=1.
+
+2021-04-26 10:11:13,674 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=2, votedFor=nacos2:7848, cost time=15 ms
+
+2021-04-26 10:11:13,683 INFO Node <naming_instance_metadata/nacos2:7848> received PreVoteResponse from nacos3:7848, term=0, granted=true.
+
+2021-04-26 10:11:13,685 INFO Node <naming_instance_metadata/nacos2:7848> start vote and grant vote self, term=1.
+
+2021-04-26 10:11:13,707 WARN Node <naming_instance_metadata/nacos2:7848> received invalid PreVoteResponse from nacos1:7848, state not in STATE_FOLLOWER but STATE_CANDIDATE.
+
+2021-04-26 10:11:13,712 WARN Node <naming_service_metadata/nacos2:7848> received invalid PreVoteResponse from nacos1:7848, state not in STATE_FOLLOWER but STATE_CANDIDATE.
+
+2021-04-26 10:11:13,717 INFO Node <naming_instance_metadata/nacos2:7848> ignore PreVoteRequest from nacos3:7848, term=1, currTerm=2.
+
+2021-04-26 10:11:13,725 INFO Node <naming_service_metadata/nacos2:7848> become leader of group, term=2, conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 10:11:13,726 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos3:7848, type=Follower]@nacos3:7848 is started
+
+2021-04-26 10:11:13,746 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos1:7848, type=Follower]@nacos1:7848 is started
+
+2021-04-26 10:11:13,771 WARN Node <naming_service_metadata/nacos2:7848> received invalid RequestVoteResponse from nacos1:7848, state not in STATE_CANDIDATE but STATE_LEADER.
+
+2021-04-26 10:11:13,835 INFO onLeaderStart: term=2.
+
+2021-04-26 10:11:13,870 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=2, votedFor=nacos2:7848, cost time=125 ms
+
+2021-04-26 10:11:13,922 INFO Node <naming_instance_metadata/nacos2:7848> become leader of group, term=2, conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 10:11:13,923 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos3:7848, type=Follower]@nacos3:7848 is started
+
+2021-04-26 10:11:13,950 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos1:7848, type=Follower]@nacos1:7848 is started
+
+2021-04-26 10:11:14,047 INFO onLeaderStart: term=2.
+
+2021-04-26 10:11:14,094 WARN Node <naming_instance_metadata/nacos2:7848> received invalid RequestVoteResponse from nacos3:7848, state not in STATE_CANDIDATE but STATE_LEADER.
+
+2021-04-26 10:25:13,890 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2021-04-26 10:25:14,121 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2021-04-26 10:25:15,036 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2021-04-26 10:25:15,039 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2021-04-26 10:25:15,041 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2021-04-26 10:25:15,046 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2021-04-26 10:25:15,060 INFO The number of active nodes increment to 1.
+
+2021-04-26 10:25:15,552 INFO Starts FSMCaller successfully.
+
+2021-04-26 10:25:15,568 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service/snapshot.
+
+2021-04-26 10:25:15,569 INFO Node <naming_persistent_service/172.31.0.4:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 10:25:15,604 INFO Node <naming_persistent_service/172.31.0.4:7848> init, term=3, lastLogId=LogId [index=3, term=3], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 10:25:15,609 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 10:25:15,611 INFO Start the RaftGroupService successfully.
+
+2021-04-26 10:25:15,800 WARN Channel in TRANSIENT_FAILURE state: 172.31.0.4:7848.
+
+2021-04-26 10:25:15,811 WARN Channel in SHUTDOWN state: 172.31.0.4:7848.
+
+2021-04-26 10:25:17,246 INFO Node <naming_persistent_service/172.31.0.4:7848> shutdown, currTerm=3 state=STATE_FOLLOWER.
+
+2021-04-26 10:25:17,318 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service/meta-data, term=3, votedFor=nacos2:7848, cost time=36 ms
+
+2021-04-26 10:25:17,318 INFO Shutting down FSMCaller...
+
+2021-04-26 10:25:17,320 INFO onShutdown.
+
+2021-04-26 10:25:17,322 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@3cd59ef5[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2021-04-26 10:25:17,324 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@1cc9cfb2[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2021-04-26 10:25:17,325 INFO The number of active nodes decrement to 0.
+
+2021-04-26 10:25:17,327 INFO ThreadPool is terminated: JRaft-Global-ElectionTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@9175cc8[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2021-04-26 10:25:17,328 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_persistent_service/172.31.0.4:7848>'}.
+
+2021-04-26 10:25:17,330 INFO ThreadPool is terminated: JRaft-Global-VoteTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@cfbc8e8[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2021-04-26 10:25:17,331 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_persistent_service/172.31.0.4:7848>'}.
+
+2021-04-26 10:25:17,332 INFO ThreadPool is terminated: JRaft-Global-StepDownTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@3bead518[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2021-04-26 10:25:17,332 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_persistent_service/172.31.0.4:7848>'}.
+
+2021-04-26 10:25:17,337 INFO ThreadPool is terminated: JRaft-Global-SnapshotTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@7a2d054d[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2021-04-26 10:25:17,338 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_persistent_service/172.31.0.4:7848>'}.
+
+2021-04-26 10:25:17,339 INFO Node <naming_persistent_service/172.31.0.4:7848> shutdown, currTerm=3 state=STATE_SHUTTING.
+
+2021-04-26 10:25:17,340 INFO Stop the RaftGroupService successfully.
+
+2021-04-26 10:25:17,341 INFO Shutdown managed channel: 172.31.0.4:7848, ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=4, target=172.31.0.4:7848}}.
+
+2021-04-26 10:25:17,358 INFO Connection disconnected: /172.31.0.4:54682
+
+2021-04-26 10:25:17,359 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@5039a37d[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 1].
+
+2021-04-26 10:28:36,380 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2021-04-26 10:28:36,444 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2021-04-26 10:28:37,138 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2021-04-26 10:28:37,140 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2021-04-26 10:28:37,142 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2021-04-26 10:28:37,149 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2021-04-26 10:28:37,157 INFO The number of active nodes increment to 1.
+
+2021-04-26 10:28:37,502 INFO Starts FSMCaller successfully.
+
+2021-04-26 10:28:37,538 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service/snapshot.
+
+2021-04-26 10:28:37,539 INFO Node <naming_persistent_service/192.168.0.4:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 10:28:37,563 INFO Node <naming_persistent_service/192.168.0.4:7848> init, term=3, lastLogId=LogId [index=3, term=3], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 10:28:37,576 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 10:28:37,577 INFO Start the RaftGroupService successfully.
+
+2021-04-26 10:28:37,739 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 10:28:37,740 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 10:28:38,853 WARN Channel in TRANSIENT_FAILURE state: 192.168.0.4:7848.
+
+2021-04-26 10:28:38,855 WARN Channel in SHUTDOWN state: 192.168.0.4:7848.
+
+2021-04-26 10:28:38,979 INFO Node <naming_persistent_service/192.168.0.4:7848> shutdown, currTerm=3 state=STATE_FOLLOWER.
+
+2021-04-26 10:28:38,996 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service/meta-data, term=3, votedFor=nacos2:7848, cost time=14 ms
+
+2021-04-26 10:28:38,997 INFO Shutting down FSMCaller...
+
+2021-04-26 10:28:38,998 INFO onShutdown.
+
+2021-04-26 10:28:38,999 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@33b082c5[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2021-04-26 10:28:39,004 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@cfbc8e8[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2021-04-26 10:28:39,009 INFO ThreadPool is terminated: JRaft-Global-ElectionTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@44aa0cad[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2021-04-26 10:28:39,010 INFO The number of active nodes decrement to 0.
+
+2021-04-26 10:28:39,012 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_persistent_service/192.168.0.4:7848>'}.
+
+2021-04-26 10:28:39,012 INFO ThreadPool is terminated: JRaft-Global-VoteTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@3bead518[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2021-04-26 10:28:39,013 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_persistent_service/192.168.0.4:7848>'}.
+
+2021-04-26 10:28:39,014 INFO ThreadPool is terminated: JRaft-Global-StepDownTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@14bf57b2[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2021-04-26 10:28:39,014 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_persistent_service/192.168.0.4:7848>'}.
+
+2021-04-26 10:28:39,015 INFO ThreadPool is terminated: JRaft-Global-SnapshotTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@3c6c28ea[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2021-04-26 10:28:39,017 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_persistent_service/192.168.0.4:7848>'}.
+
+2021-04-26 10:28:39,019 INFO Node <naming_persistent_service/192.168.0.4:7848> shutdown, currTerm=3 state=STATE_SHUTTING.
+
+2021-04-26 10:28:39,022 INFO Stop the RaftGroupService successfully.
+
+2021-04-26 10:28:39,024 INFO Shutdown managed channel: nacos3:7848, ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=4, target=nacos3:7848}}.
+
+2021-04-26 10:28:39,107 INFO Shutdown managed channel: 192.168.0.4:7848, ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=8, target=192.168.0.4:7848}}.
+
+2021-04-26 10:28:39,133 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@4697970c[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 2].
+
+2021-04-26 10:28:39,147 INFO Connection disconnected: /192.168.0.4:56536
+
+2021-04-26 11:00:06,743 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2021-04-26 11:00:06,849 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2021-04-26 11:00:11,360 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2021-04-26 11:00:11,363 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2021-04-26 11:00:11,364 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2021-04-26 11:00:11,369 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2021-04-26 11:00:11,380 INFO The number of active nodes increment to 1.
+
+2021-04-26 11:00:11,716 INFO Starts FSMCaller successfully.
+
+2021-04-26 11:00:11,733 WARN No data for snapshot reader /home/nacos/data/protocol/raft/nacos_config/snapshot.
+
+2021-04-26 11:00:11,733 INFO Node <nacos_config/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 11:00:11,798 INFO Node <nacos_config/nacos2:7848> init, term=3, lastLogId=LogId [index=3, term=3], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 11:00:11,801 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 11:00:11,802 INFO Start the RaftGroupService successfully.
+
+2021-04-26 11:00:11,934 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 11:00:11,935 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 11:00:12,474 INFO The number of active nodes increment to 2.
+
+2021-04-26 11:00:12,698 INFO Starts FSMCaller successfully.
+
+2021-04-26 11:00:12,704 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service/snapshot.
+
+2021-04-26 11:00:12,705 INFO Node <naming_persistent_service/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 11:00:12,712 INFO Node <naming_persistent_service/nacos2:7848> init, term=3, lastLogId=LogId [index=3, term=3], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 11:00:12,716 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 11:00:12,717 INFO Start the RaftGroupService successfully.
+
+2021-04-26 11:00:12,971 ERROR Fail to connect nacos3:7848, remoting exception: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 929327691ns. [buffered_nanos=909371153, remote_addr=nacos3/192.168.16.2:7848].
+
+2021-04-26 11:00:12,971 ERROR Fail to connect peer nacos3:7848 to get leader for group nacos_config.
+
+2021-04-26 11:00:12,974 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 11:00:12,974 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 11:00:13,529 WARN Channel in TRANSIENT_FAILURE state: nacos2:7848.
+
+2021-04-26 11:00:13,530 WARN Channel in SHUTDOWN state: nacos2:7848.
+
+2021-04-26 11:00:17,568 INFO Node <nacos_config/nacos2:7848> term 3 start preVote.
+
+2021-04-26 11:00:17,576 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 11:00:17,577 INFO Peer nacos3:7848 is connected.
+
+2021-04-26 11:00:17,577 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 11:00:17,596 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 11:00:17,597 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 11:00:17,597 INFO Peer nacos1:7848 is connected.
+
+2021-04-26 11:00:17,616 INFO Node <nacos_config/nacos2:7848> received PreVoteResponse from nacos3:7848, term=3, granted=true.
+
+2021-04-26 11:00:17,616 INFO Node <nacos_config/nacos2:7848> start vote and grant vote self, term=3.
+
+2021-04-26 11:00:17,639 INFO Save raft meta, path=/home/nacos/data/protocol/raft/nacos_config/meta-data, term=4, votedFor=nacos2:7848, cost time=16 ms
+
+2021-04-26 11:00:17,639 WARN Node <nacos_config/nacos2:7848> received invalid PreVoteResponse from nacos1:7848, state not in STATE_FOLLOWER but STATE_CANDIDATE.
+
+2021-04-26 11:00:17,649 INFO Node <nacos_config/nacos2:7848> become leader of group, term=4, conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 11:00:17,658 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos3:7848, type=Follower]@nacos3:7848 is started
+
+2021-04-26 11:00:17,664 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos1:7848, type=Follower]@nacos1:7848 is started
+
+2021-04-26 11:00:17,668 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2021-04-26 11:00:17,674 WARN Node <nacos_config/nacos2:7848> received invalid RequestVoteResponse from nacos1:7848, state not in STATE_CANDIDATE but STATE_LEADER.
+
+2021-04-26 11:00:17,732 INFO onLeaderStart: term=4.
+
+2021-04-26 11:00:18,060 INFO Node <naming_persistent_service/nacos2:7848> term 3 start preVote.
+
+2021-04-26 11:00:18,106 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 11:00:18,106 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 11:00:18,110 INFO Peer nacos3:7848 is connected.
+
+2021-04-26 11:00:18,145 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 11:00:18,145 INFO Peer nacos1:7848 is connected.
+
+2021-04-26 11:00:18,145 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 11:00:18,192 INFO Node <naming_persistent_service/nacos2:7848> received PreVoteResponse from nacos3:7848, term=3, granted=true.
+
+2021-04-26 11:00:18,200 INFO Node <naming_persistent_service/nacos2:7848> start vote and grant vote self, term=3.
+
+2021-04-26 11:00:18,254 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service/meta-data, term=4, votedFor=nacos2:7848, cost time=17 ms
+
+2021-04-26 11:00:18,255 WARN Node <naming_persistent_service/nacos2:7848> received invalid PreVoteResponse from nacos1:7848, state not in STATE_FOLLOWER but STATE_CANDIDATE.
+
+2021-04-26 11:00:18,266 INFO Node <naming_persistent_service/nacos2:7848> become leader of group, term=4, conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 11:00:18,302 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos3:7848, type=Follower]@nacos3:7848 is started
+
+2021-04-26 11:00:18,318 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos1:7848, type=Follower]@nacos1:7848 is started
+
+2021-04-26 11:00:18,333 WARN Node <naming_persistent_service/nacos2:7848> received invalid RequestVoteResponse from nacos1:7848, state not in STATE_CANDIDATE but STATE_LEADER.
+
+2021-04-26 11:00:18,387 INFO onLeaderStart: term=4.
+
+2021-04-26 11:00:19,762 INFO The number of active nodes increment to 3.
+
+2021-04-26 11:00:20,061 INFO Starts FSMCaller successfully.
+
+2021-04-26 11:00:20,082 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot.
+
+2021-04-26 11:00:20,084 INFO Node <naming_persistent_service_v2/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 11:00:20,085 INFO Node <naming_persistent_service_v2/nacos2:7848> init, term=2, lastLogId=LogId [index=2, term=2], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 11:00:20,088 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 11:00:20,090 INFO Start the RaftGroupService successfully.
+
+2021-04-26 11:00:20,220 INFO The number of active nodes increment to 4.
+
+2021-04-26 11:00:20,521 INFO Starts FSMCaller successfully.
+
+2021-04-26 11:00:20,526 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot.
+
+2021-04-26 11:00:20,527 INFO Node <naming_instance_metadata/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 11:00:20,544 INFO Node <naming_instance_metadata/nacos2:7848> init, term=2, lastLogId=LogId [index=2, term=2], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 11:00:20,547 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 11:00:20,549 INFO Start the RaftGroupService successfully.
+
+2021-04-26 11:00:20,658 INFO The number of active nodes increment to 5.
+
+2021-04-26 11:00:21,286 INFO Starts FSMCaller successfully.
+
+2021-04-26 11:00:21,290 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_service_metadata/snapshot.
+
+2021-04-26 11:00:21,290 INFO Node <naming_service_metadata/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 11:00:21,295 INFO Node <naming_service_metadata/nacos2:7848> init, term=2, lastLogId=LogId [index=2, term=2], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 11:00:21,297 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 11:00:21,298 INFO Start the RaftGroupService successfully.
+
+2021-04-26 11:00:25,710 INFO Node <naming_persistent_service_v2/nacos2:7848> term 2 start preVote.
+
+2021-04-26 11:00:25,804 INFO Peer nacos3:7848 is connected.
+
+2021-04-26 11:00:25,797 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 11:00:25,821 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 11:00:26,018 INFO Node <naming_instance_metadata/nacos2:7848> term 2 start preVote.
+
+2021-04-26 11:00:26,026 INFO Peer nacos3:7848 is connected.
+
+2021-04-26 11:00:26,025 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 11:00:26,035 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 11:00:26,094 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 11:00:26,094 INFO Peer nacos1:7848 is connected.
+
+2021-04-26 11:00:26,094 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 11:00:26,277 INFO Node <naming_persistent_service_v2/nacos2:7848> received PreVoteRequest from nacos1:7848, term=3, currTerm=2, granted=true, requestLastLogId=LogId [index=2, term=2], lastLogId=LogId [index=2, term=2].
+
+2021-04-26 11:00:26,288 INFO Peer nacos1:7848 is connected.
+
+2021-04-26 11:00:26,293 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 11:00:26,296 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 11:00:26,301 INFO Node <naming_persistent_service_v2/nacos2:7848> received PreVoteRequest from nacos3:7848, term=3, currTerm=2, granted=true, requestLastLogId=LogId [index=2, term=2], lastLogId=LogId [index=2, term=2].
+
+2021-04-26 11:00:26,410 INFO Node <naming_service_metadata/nacos2:7848> term 2 start preVote.
+
+2021-04-26 11:00:26,414 INFO Node <naming_instance_metadata/nacos2:7848> received PreVoteRequest from nacos3:7848, term=3, currTerm=2, granted=true, requestLastLogId=LogId [index=2, term=2], lastLogId=LogId [index=2, term=2].
+
+2021-04-26 11:00:26,417 INFO Node <naming_instance_metadata/nacos2:7848> received PreVoteResponse from nacos3:7848, term=2, granted=true.
+
+2021-04-26 11:00:26,420 INFO Node <naming_instance_metadata/nacos2:7848> start vote and grant vote self, term=2.
+
+2021-04-26 11:00:26,422 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 11:00:26,423 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 11:00:26,422 INFO Peer nacos3:7848 is connected.
+
+2021-04-26 11:00:26,424 INFO Node <naming_instance_metadata/nacos2:7848> received PreVoteRequest from nacos1:7848, term=3, currTerm=3, granted=true, requestLastLogId=LogId [index=2, term=2], lastLogId=LogId [index=2, term=2].
+
+2021-04-26 11:00:26,510 INFO Node <naming_persistent_service_v2/nacos2:7848> received PreVoteResponse from nacos3:7848, term=2, granted=true.
+
+2021-04-26 11:00:26,511 INFO Node <naming_persistent_service_v2/nacos2:7848> start vote and grant vote self, term=2.
+
+2021-04-26 11:00:26,561 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=3, votedFor=nacos2:7848, cost time=47 ms
+
+2021-04-26 11:00:26,564 INFO Node <naming_instance_metadata/nacos2:7848> received RequestVoteRequest from nacos3:7848, term=3, currTerm=3.
+
+2021-04-26 11:00:26,598 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=3, votedFor=nacos2:7848, cost time=74 ms
+
+2021-04-26 11:00:26,598 INFO Node <naming_persistent_service_v2/nacos2:7848> received RequestVoteRequest from nacos1:7848, term=3, currTerm=3.
+
+2021-04-26 11:00:26,599 WARN Node <naming_instance_metadata/nacos2:7848> received invalid PreVoteResponse from nacos1:7848, state not in STATE_FOLLOWER but STATE_CANDIDATE.
+
+2021-04-26 11:00:26,606 INFO Node <naming_persistent_service_v2/nacos2:7848> received RequestVoteRequest from nacos3:7848, term=3, currTerm=3.
+
+2021-04-26 11:00:26,613 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 11:00:26,613 INFO Peer nacos1:7848 is connected.
+
+2021-04-26 11:00:26,624 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 11:00:26,644 WARN Node <naming_persistent_service_v2/nacos2:7848> received invalid PreVoteResponse from nacos1:7848, state not in STATE_FOLLOWER but STATE_CANDIDATE.
+
+2021-04-26 11:00:26,671 INFO Node <naming_service_metadata/nacos2:7848> received PreVoteRequest from nacos3:7848, term=3, currTerm=2, granted=true, requestLastLogId=LogId [index=2, term=2], lastLogId=LogId [index=2, term=2].
+
+2021-04-26 11:00:26,676 INFO Node <naming_service_metadata/nacos2:7848> received PreVoteResponse from nacos3:7848, term=2, granted=true.
+
+2021-04-26 11:00:26,679 INFO Node <naming_service_metadata/nacos2:7848> start vote and grant vote self, term=2.
+
+2021-04-26 11:00:26,720 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=3, votedFor=nacos2:7848, cost time=31 ms
+
+2021-04-26 11:00:26,731 WARN Node <naming_service_metadata/nacos2:7848> received invalid PreVoteResponse from nacos1:7848, state not in STATE_FOLLOWER but STATE_CANDIDATE.
+
+2021-04-26 11:00:26,736 INFO Node <naming_service_metadata/nacos2:7848> become leader of group, term=3, conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 11:00:26,738 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos3:7848, type=Follower]@nacos3:7848 is started
+
+2021-04-26 11:00:26,794 INFO Replicator=Replicator [state=null, statInfo=<running=null, firstLogIndex=0, lastLogIncluded=0, lastLogIndex=0, lastTermIncluded=0>, peerId=nacos1:7848, type=Follower]@nacos1:7848 is started
+
+2021-04-26 11:00:26,810 WARN Node <naming_service_metadata/nacos2:7848> received invalid RequestVoteResponse from nacos1:7848, state not in STATE_CANDIDATE but STATE_LEADER.
+
+2021-04-26 11:00:26,850 INFO onLeaderStart: term=3.
+
+2021-04-26 11:00:32,340 WARN Candidate node <naming_persistent_service_v2/nacos2:7848> term 3 steps down when election reaching vote timeout: fail to get quorum vote-granted.
+
+2021-04-26 11:00:32,343 INFO Node <naming_persistent_service_v2/nacos2:7848> term 3 start preVote.
+
+2021-04-26 11:00:32,344 ERROR Run timer failed.
+
+java.lang.IllegalStateException: java.lang.InterruptedException
+	at com.alipay.sofa.jraft.storage.impl.LogManagerImpl.getLastLogId(LogManagerImpl.java:884)
+	at com.alipay.sofa.jraft.core.NodeImpl.preVote(NodeImpl.java:2639)
+	at com.alipay.sofa.jraft.core.NodeImpl.handleVoteTimeout(NodeImpl.java:2696)
+	at com.alipay.sofa.jraft.core.NodeImpl.access$1100(NodeImpl.java:138)
+	at com.alipay.sofa.jraft.core.NodeImpl$1.onTrigger(NodeImpl.java:914)
+	at com.alipay.sofa.jraft.util.RepeatedTimer.run(RepeatedTimer.java:86)
+	at com.alipay.sofa.jraft.util.RepeatedTimer.lambda$schedule$0(RepeatedTimer.java:182)
+	at com.alipay.sofa.jraft.util.timer.DefaultTimer$TimeoutTask.run(DefaultTimer.java:117)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1302)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at com.alipay.sofa.jraft.storage.impl.LogManagerImpl$LastLogIdClosure.await(LogManagerImpl.java:283)
+	at com.alipay.sofa.jraft.storage.impl.LogManagerImpl.getLastLogId(LogManagerImpl.java:881)
+	... 14 common frames omitted
+2021-04-26 11:00:36,666 INFO Node <naming_persistent_service_v2/nacos2:7848> received PreVoteRequest from nacos1:7848, term=4, currTerm=3, granted=true, requestLastLogId=LogId [index=2, term=2], lastLogId=LogId [index=2, term=2].
+
+2021-04-26 11:00:36,677 INFO Node <naming_persistent_service_v2/nacos2:7848> received RequestVoteRequest from nacos1:7848, term=4, currTerm=3.
+
+2021-04-26 11:00:36,688 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=4, votedFor=0.0.0.0:0, cost time=10 ms
+
+2021-04-26 11:00:36,699 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=4, votedFor=nacos1:7848, cost time=10 ms
+
+2021-04-26 11:04:33,012 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2021-04-26 11:04:33,107 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2021-04-26 11:04:36,195 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2021-04-26 11:04:36,199 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2021-04-26 11:04:36,200 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2021-04-26 11:04:36,204 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2021-04-26 11:04:36,211 INFO The number of active nodes increment to 1.
+
+2021-04-26 11:04:36,460 INFO Starts FSMCaller successfully.
+
+2021-04-26 11:04:36,472 WARN No data for snapshot reader /home/nacos/data/protocol/raft/nacos_config/snapshot.
+
+2021-04-26 11:04:36,472 INFO Node <nacos_config/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 11:04:36,499 INFO Node <nacos_config/nacos2:7848> init, term=4, lastLogId=LogId [index=5, term=4], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 11:04:36,501 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 11:04:36,503 INFO Start the RaftGroupService successfully.
+
+2021-04-26 11:04:36,561 INFO Save raft meta, path=/home/nacos/data/protocol/raft/nacos_config/meta-data, term=5, votedFor=0.0.0.0:0, cost time=13 ms
+
+2021-04-26 11:04:36,600 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-26 11:04:36,601 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-26 11:04:36,802 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 11:04:36,803 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 11:04:36,927 INFO The number of active nodes increment to 2.
+
+2021-04-26 11:04:36,939 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2021-04-26 11:04:37,159 INFO Starts FSMCaller successfully.
+
+2021-04-26 11:04:37,163 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service/snapshot.
+
+2021-04-26 11:04:37,163 INFO Node <naming_persistent_service/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 11:04:37,165 INFO Node <naming_persistent_service/nacos2:7848> init, term=4, lastLogId=LogId [index=4, term=4], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 11:04:37,167 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 11:04:37,304 INFO Start the RaftGroupService successfully.
+
+2021-04-26 11:04:37,356 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service/meta-data, term=5, votedFor=0.0.0.0:0, cost time=8 ms
+
+2021-04-26 11:04:38,188 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-26 11:04:38,189 INFO Peer nacos1:7848 is connected.
+
+2021-04-26 11:04:38,190 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-26 11:04:39,114 INFO The number of active nodes increment to 3.
+
+2021-04-26 11:04:39,249 INFO Starts FSMCaller successfully.
+
+2021-04-26 11:04:39,252 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot.
+
+2021-04-26 11:04:39,253 INFO Node <naming_persistent_service_v2/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 11:04:39,255 INFO Node <naming_persistent_service_v2/nacos2:7848> init, term=4, lastLogId=LogId [index=3, term=4], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 11:04:39,256 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 11:04:39,257 INFO Start the RaftGroupService successfully.
+
+2021-04-26 11:04:39,289 INFO The number of active nodes increment to 4.
+
+2021-04-26 11:04:39,403 INFO Starts FSMCaller successfully.
+
+2021-04-26 11:04:39,405 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot.
+
+2021-04-26 11:04:39,406 INFO Node <naming_instance_metadata/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 11:04:39,408 INFO Node <naming_instance_metadata/nacos2:7848> init, term=3, lastLogId=LogId [index=3, term=3], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 11:04:39,409 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 11:04:39,409 INFO Start the RaftGroupService successfully.
+
+2021-04-26 11:04:39,422 INFO The number of active nodes increment to 5.
+
+2021-04-26 11:04:39,557 INFO Starts FSMCaller successfully.
+
+2021-04-26 11:04:39,561 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_service_metadata/snapshot.
+
+2021-04-26 11:04:39,562 INFO Node <naming_service_metadata/nacos2:7848> target priority value has changed from: 0, to: -1.
+
+2021-04-26 11:04:39,564 INFO Node <naming_service_metadata/nacos2:7848> init, term=3, lastLogId=LogId [index=3, term=3], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-26 11:04:39,564 WARN RPC server is not started in RaftGroupService.
+
+2021-04-26 11:04:39,565 INFO Start the RaftGroupService successfully.
+
+2021-04-26 11:04:39,649 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=4, votedFor=0.0.0.0:0, cost time=7 ms
+

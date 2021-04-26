@@ -1,0 +1,2 @@
+2021-04-26 11:02:05,479|166|true|192.168.16.1|publish|nacos-cluster-cloud-hostname.yaml|DEFAULT_GROUP||dbd4c0358362d558dde4710cadfb1ed5|null
+2021-04-26 11:05:03,501|49|true|192.168.16.1|remove|test.yaml|DEFAULT_GROUP||null|null

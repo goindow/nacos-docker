@@ -1,0 +1,114 @@
+2021-04-25 16:27:31,485 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2021-04-25 16:27:31,673 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2021-04-25 16:27:39,979 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2021-04-25 16:27:39,986 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2021-04-25 16:27:39,993 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2021-04-25 16:27:40,008 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2021-04-25 16:27:40,049 INFO The number of active nodes increment to 1.
+
+2021-04-25 16:27:40,690 INFO Starts FSMCaller successfully.
+
+2021-04-25 16:27:40,724 WARN No data for snapshot reader /home/nacos/data/protocol/raft/nacos_config/snapshot.
+
+2021-04-25 16:27:40,796 INFO Node <nacos_config/nacos3:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-25 16:27:40,806 WARN RPC server is not started in RaftGroupService.
+
+2021-04-25 16:27:40,808 INFO Start the RaftGroupService successfully.
+
+2021-04-25 16:27:40,931 INFO Node <nacos_config/nacos3:7848> received PreVoteRequest from nacos2:7848, term=1, currTerm=0, granted=true, requestLastLogId=LogId [index=0, term=0], lastLogId=LogId [index=0, term=0].
+
+2021-04-25 16:27:41,450 WARN Channel in TRANSIENT_FAILURE state: nacos3:7848.
+
+2021-04-25 16:27:41,456 WARN Channel in SHUTDOWN state: nacos3:7848.
+
+2021-04-25 16:27:41,672 INFO Node <nacos_config/nacos3:7848> received RequestVoteRequest from nacos2:7848, term=1, currTerm=0.
+
+2021-04-25 16:27:41,795 INFO Save raft meta, path=/home/nacos/data/protocol/raft/nacos_config/meta-data, term=1, votedFor=0.0.0.0:0, cost time=119 ms
+
+2021-04-25 16:27:41,843 INFO Save raft meta, path=/home/nacos/data/protocol/raft/nacos_config/meta-data, term=1, votedFor=nacos2:7848, cost time=43 ms
+
+2021-04-25 16:27:42,015 WARN Channel in TRANSIENT_FAILURE state: nacos1:7848.
+
+2021-04-25 16:27:42,017 WARN Channel in SHUTDOWN state: nacos1:7848.
+
+2021-04-25 16:27:42,207 INFO The number of active nodes increment to 2.
+
+2021-04-25 16:27:42,278 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2021-04-25 16:27:42,280 WARN Channel in TRANSIENT_FAILURE state: nacos2:7848.
+
+2021-04-25 16:27:42,280 WARN Channel in SHUTDOWN state: nacos2:7848.
+
+2021-04-25 16:27:42,478 INFO Starts FSMCaller successfully.
+
+2021-04-25 16:27:42,484 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service/snapshot.
+
+2021-04-25 16:27:42,487 INFO Node <naming_persistent_service/nacos3:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-25 16:27:42,488 WARN RPC server is not started in RaftGroupService.
+
+2021-04-25 16:27:42,491 INFO Start the RaftGroupService successfully.
+
+2021-04-25 16:27:42,817 INFO Node <naming_persistent_service/nacos3:7848> received PreVoteRequest from nacos2:7848, term=1, currTerm=0, granted=true, requestLastLogId=LogId [index=0, term=0], lastLogId=LogId [index=0, term=0].
+
+2021-04-25 16:27:42,910 INFO Node <naming_persistent_service/nacos3:7848> received RequestVoteRequest from nacos2:7848, term=1, currTerm=0.
+
+2021-04-25 16:27:42,929 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service/meta-data, term=1, votedFor=0.0.0.0:0, cost time=16 ms
+
+2021-04-25 16:27:42,944 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service/meta-data, term=1, votedFor=nacos2:7848, cost time=13 ms
+
+2021-04-25 16:27:45,097 WARN Channel in TRANSIENT_FAILURE state: nacos2:7848.
+
+2021-04-25 16:27:45,097 INFO Peer nacos2:7848 is connected.
+
+2021-04-25 16:27:45,099 WARN Channel in SHUTDOWN state: nacos2:7848.
+
+2021-04-25 16:27:47,684 INFO The number of active nodes increment to 3.
+
+2021-04-25 16:27:47,909 INFO Starts FSMCaller successfully.
+
+2021-04-25 16:27:47,916 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot.
+
+2021-04-25 16:27:47,919 INFO Node <naming_persistent_service_v2/nacos3:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-25 16:27:47,921 WARN RPC server is not started in RaftGroupService.
+
+2021-04-25 16:27:47,921 INFO Start the RaftGroupService successfully.
+
+2021-04-25 16:27:48,029 INFO The number of active nodes increment to 4.
+
+2021-04-25 16:27:48,497 INFO Starts FSMCaller successfully.
+
+2021-04-25 16:27:48,501 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot.
+
+2021-04-25 16:27:48,503 INFO Node <naming_instance_metadata/nacos3:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-25 16:27:48,504 WARN RPC server is not started in RaftGroupService.
+
+2021-04-25 16:27:48,505 INFO Start the RaftGroupService successfully.
+
+2021-04-25 16:27:48,524 INFO The number of active nodes increment to 5.
+
+2021-04-25 16:27:48,779 INFO Starts FSMCaller successfully.
+
+2021-04-25 16:27:48,785 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_service_metadata/snapshot.
+
+2021-04-25 16:27:48,787 INFO Node <naming_service_metadata/nacos3:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=nacos3:7848,nacos1:7848,nacos2:7848, oldConf=.
+
+2021-04-25 16:27:48,788 WARN RPC server is not started in RaftGroupService.
+
+2021-04-25 16:27:48,788 INFO Start the RaftGroupService successfully.
+
+2021-04-25 16:27:57,501 INFO Node <naming_persistent_service_v2/nacos3:7848> term 0 start preVote.
+
+2021-04-25 16:27:57,514 INFO Node <naming_service_metadata/nacos3:7848> term 0 start preVote.
+
+2021-04-25 16:27:59,413 INFO Node <naming_instance_metadata/nacos3:7848> term 0 start preVote.
+
