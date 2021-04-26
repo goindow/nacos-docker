@@ -1,40 +1,8 @@
-2021-04-23 16:30:28,324 INFO Current addressing mode selection : StandaloneMemberLookup
+2021-04-26 10:23:38,140 INFO Current addressing mode selection : StandaloneMemberLookup
 
-2021-04-23 16:30:28,331 WARN [serverlist] updated to : [Member{ip='172.30.0.2', port=8848, state=UP, extendInfo={raftPort=7848}}]
+2021-04-26 10:23:38,149 WARN [serverlist] updated to : [Member{ip='172.30.0.2', port=8848, state=UP, extendInfo={raftPort=7848}}]
 
-2021-04-23 16:30:29,858 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[] 
+2021-04-26 10:23:39,218 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[] 
 
-2021-04-23 16:30:35,318 INFO This node is ready to provide external services
-
-2021-04-23 16:33:58,649 INFO Current addressing mode selection : StandaloneMemberLookup
-
-2021-04-23 16:33:58,657 WARN [serverlist] updated to : [Member{ip='172.31.0.2', port=8848, state=UP, extendInfo={raftPort=7848}}]
-
-2021-04-23 16:34:00,044 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[] 
-
-2021-04-23 16:34:04,613 INFO This node is ready to provide external services
-
-2021-04-23 16:37:01,395 INFO Current addressing mode selection : StandaloneMemberLookup
-
-2021-04-23 16:37:01,403 WARN [serverlist] updated to : [Member{ip='192.168.0.2', port=8848, state=UP, extendInfo={raftPort=7848}}]
-
-2021-04-23 16:37:02,838 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[] 
-
-2021-04-23 16:37:07,360 INFO This node is ready to provide external services
-
-2021-04-23 16:39:26,951 INFO Current addressing mode selection : StandaloneMemberLookup
-
-2021-04-23 16:39:26,959 WARN [serverlist] updated to : [Member{ip='192.168.16.2', port=8848, state=UP, extendInfo={raftPort=7848}}]
-
-2021-04-23 16:39:28,565 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[] 
-
-2021-04-23 16:39:33,064 INFO This node is ready to provide external services
-
-2021-04-23 16:41:08,642 INFO Current addressing mode selection : StandaloneMemberLookup
-
-2021-04-23 16:41:08,648 WARN [serverlist] updated to : [Member{ip='192.168.32.2', port=8848, state=UP, extendInfo={raftPort=7848}}]
-
-2021-04-23 16:41:10,162 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[] 
-
-2021-04-23 16:41:14,762 INFO This node is ready to provide external services
+2021-04-26 10:23:42,161 INFO This node is ready to provide external services
 

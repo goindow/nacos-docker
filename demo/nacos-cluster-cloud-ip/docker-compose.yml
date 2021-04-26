@@ -1,21 +1,63 @@
 version: '2'
 
 services:
-  nacos:
+  nacos1:
+    hostname: nacos1
     image: "nacos/nacos-server:2.0.0"
+    networks:
+      nacos_net:
+        ipv4_address: 192.168.100.11
     ports:
       - "8848:8848"    # port HTTP client -> server
 #      - "9848:9848"    # port+1000 gRPC client -> server
-#      - "9849:9849"    # port+1001 gRPC server <-> server，集群同步端口
-#      - "7848:7848"    # port-1000 jRaft server <-> server，集群选举端口（如果集群的 NACOS_SERVER_IP & NACOS_SERVERS 指定的是 docker 容器内同一个网络地址则不需要映射，否则需要）
-  volumes:
+    volumes:
       - ./conf/custom.properties:/home/nacos/init.d/custom.properties    # 自定义配置
-      - ./data:/home/nacos/data    # 持久化（使用内嵌分布式数据库）
-      - ./logs:/home/nacos/logs
+      - ./data/nacos1:/home/nacos/data    # 持久化（使用内嵌分布式数据库）
+      - ./logs/nacos1:/home/nacos/logs
 #      - /etc/localtime:/etc/localtime
 #    restart: always
-    environment:
-      # 更多环境变量参考，https://hub.fastgit.org/nacos-group/nacos-docker/blob/master/README_ZH.md
-      - EMBEDDED_STORAGE=embedded       # 使用内嵌分布式数据库持久化
-      - NACOS_SERVER_IP=172.18.2.160    # 指定宿主机网卡 IP，否则使用 docker 内部 IP
-      - NACOS_SERVERS=10.20.10.236:8848 10.20.11.58:8848    # 集群节点列表
+    env_file:
+      - ./env/docker-compose.env
+
+  nacos2:
+    hostname: nacos2
+    image: "nacos/nacos-server:2.0.0"
+    networks:
+      nacos_net:
+        ipv4_address: 192.168.100.12
+    ports:
+      - "8849:8848"    # port HTTP client -> server
+#      - "9849:9848"    # port+1000 gRPC client -> server
+    volumes:
+      - ./conf/custom.properties:/home/nacos/init.d/custom.properties    # 自定义配置
+      - ./data/nacos2:/home/nacos/data    # 持久化（使用内嵌分布式数据库）
+      - ./logs/nacos2:/home/nacos/logs
+#      - /etc/localtime:/etc/localtime
+#    restart: always
+    env_file:
+      - ./env/docker-compose.env
+
+  nacos3:
+    hostname: nacos3
+    image: "nacos/nacos-server:2.0.0"
+    networks:
+      nacos_net:
+        ipv4_address: 192.168.100.13
+    ports:
+      - "8850:8848"    # port HTTP client -> server
+#      - "9849:9848"    # port+1000 gRPC client -> server
+    volumes:
+      - ./conf/custom.properties:/home/nacos/init.d/custom.properties    # 自定义配置
+      - ./data/nacos3:/home/nacos/data    # 持久化（使用内嵌分布式数据库）
+      - ./logs/nacos3:/home/nacos/logs
+#      - /etc/localtime:/etc/localtime
+#    restart: always
+    env_file:
+      - ./env/docker-compose.env
+
+networks:
+  nacos_net:
+    ipam:
+      config:
+        - subnet: 192.168.100.0/24
+          gateway: 192.168.100.1

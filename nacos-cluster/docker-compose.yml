@@ -19,3 +19,9 @@ services:
       - EMBEDDED_STORAGE=embedded       # 使用内嵌分布式数据库持久化
       - NACOS_SERVER_IP=172.18.2.160    # 指定宿主机网卡 IP，否则使用 docker 内部 IP
       - NACOS_SERVERS=10.20.10.236:8848 10.20.11.58:8848    # 集群节点列表
+      # JVM
+#      - JVM_XMS=1g      # 程序启动时初始内存大小
+#      - JVM_XMX=1g      # 程序运行时最大可用内存
+#      - JVM_XMN=512m    # 年轻代内存大小
+#      - JVM_MS=128m     # 元空间初始内存大小
+#      - JVM_MMS=320m    # 元空间最大可用内存
