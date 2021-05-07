@@ -1,8 +1,0 @@
-2021-04-26 10:23:38,340 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
-
-2021-04-26 10:23:38,341 INFO listen for service meta change
-
-2021-04-26 10:23:40,584 INFO member change, new members [Member{ip='172.30.0.2', port=8848, state=UP, extendInfo={lastRefreshTime=1619403820582, raftMetaData=com.alibaba.nacos.consistency.ProtocolMetaData@2933d485, raftPort=7848, version=2.0.0}}]
-
-2021-04-26 10:23:40,591 INFO [NACOS-DISTRO] healthy server list changed, old: [172.30.0.2:8848], new: [172.30.0.2:8848]
-

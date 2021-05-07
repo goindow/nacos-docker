@@ -1,5 +1,0 @@
-2021-04-26 11:02:05,470|nacos1|nacos-cluster-cloud-hostname.yaml|DEFAULT_GROUP|null|null|1619406125315|nacos1|persist|pub|-1|dbd4c0358362d558dde4710cadfb1ed5
-2021-04-26 11:02:05,912|nacos1|nacos-cluster-cloud-hostname.yaml|DEFAULT_GROUP|null|null|1619406125315|192.168.16.1|dump|ok|597|1495
-2021-04-26 11:03:58,646|nacos1|test.yaml|DEFAULT_GROUP|null|null|1619406238612|192.168.16.1|dump|ok|34|3
-2021-04-26 11:05:03,499|nacos1|test.yaml|DEFAULT_GROUP|null|null|1619406303499|192.168.16.1|persist|remove|-1|null
-2021-04-26 11:05:03,501|nacos1|test.yaml|DEFAULT_GROUP|null|null|1619406303452|192.168.16.1|dump|remove-ok|49|0

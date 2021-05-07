@@ -1,6 +1,0 @@
-2021-04-25 16:27:30,425 INFO Current addressing mode selection : FileConfigMemberLookup
-
-2021-04-25 16:27:30,465 WARN [serverlist] updated to : [Member{ip='nacos3', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=DOWN, extendInfo={raftPort=7848}}, Member{ip='nacos1', port=8848, state=DOWN, extendInfo={raftPort=7848}}]
-
-2021-04-25 16:27:45,835 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[Member{ip='nacos1', port=8848, state=DOWN, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=DOWN, extendInfo={raftPort=7848}}] 
-

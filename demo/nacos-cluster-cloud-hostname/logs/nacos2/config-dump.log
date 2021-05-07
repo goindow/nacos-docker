@@ -1,8 +1,0 @@
-2021-04-26 11:04:38,360 WARN [dump-ignore] ignore to save cache file. groupKey=nacos-cluster-cloud-hostname.yaml+DEFAULT_GROUP, md5=dbd4c0358362d558dde4710cadfb1ed5, lastModifiedOld=1619406125315, lastModifiedNew=1619406125315
-
-2021-04-26 11:04:38,367 INFO [dump-all-ok] nacos-cluster-cloud-hostname.yaml+DEFAULT_GROUP, 1619406125315, length=1495, md5=dbd4c0358362d558dde4710cadfb1ed5
-
-2021-04-26 11:04:38,369 WARN [dump-ignore] ignore to save cache file. groupKey=test.yaml+DEFAULT_GROUP, md5=900150983cd24fb0d6963f7d28e17f72, lastModifiedOld=1619406238612, lastModifiedNew=1619406238612
-
-2021-04-26 11:04:38,370 INFO [dump-all-ok] test.yaml+DEFAULT_GROUP, 1619406238612, length=3, md5=900150983cd24fb0d6963f7d28e17f72
-
