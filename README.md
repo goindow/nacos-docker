@@ -5,9 +5,9 @@
 - source/，相关项目演进源码（无需关心）
 - nacos-standlone/，单机模式模板
 - nacos-cluster/，集群模式模板
-- demo/，各场景用例（找到符合架构的用例，直接下载使用）
+- scene/，各场景用例（找到符合架构的用例，直接下载使用）
 
-## demo 用例说明
+## scene/ 场景用例说明
 - /nacos-standalone
 > 单机模式
 - /nacos-cluster-ecs
@@ -19,7 +19,7 @@
 
 
   ## 使用
-  1. 从 demo/ 中找到符合架构的用例，下载到服务器
+  1. 从 scene/ 中找到相应场景用例，下载到服务器
   2. 修改相关配置
   3. 运行容器
   ```shell
