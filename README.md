@@ -4,7 +4,7 @@
 ## 目录说明
 - source/，相关项目演进源码（无需关心）
 - nacos-docker/，docker-compose 部署模板
-- scene/，各场景用例（找到符合架构的用例，直接下载使用）
+- scene/，各场景用例（找到相应场景用例，直接下载使用）
 
 ## scene/ 场景用例说明
 - /nacos-standalone
