@@ -3,8 +3,7 @@
 
 ## 目录说明
 - source/，相关项目演进源码（无需关心）
-- nacos-standlone/，单机模式模板
-- nacos-cluster/，集群模式模板
+- nacos-docker/，docker-compose 部署模板
 - scene/，各场景用例（找到符合架构的用例，直接下载使用）
 
 ## scene/ 场景用例说明
