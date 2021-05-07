@@ -1,0 +1,6 @@
+2021-04-25 16:27:42,549 WARN isQuickStart:false
+
+2021-04-25 16:28:25,272 ERROR An exception occurred during the query operation : java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The conformance protocol is temporarily unavailable for reading, No leader at term 1.
+
+2021-04-25 16:28:25,276 ERROR An exception occurred during the query operation : java.util.concurrent.ExecutionException: com.alibaba.nacos.consistency.exception.ConsistencyException: The conformance protocol is temporarily unavailable for reading, No leader at term 1.
+

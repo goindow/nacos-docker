@@ -1,0 +1,130 @@
+2021-04-25 16:27:25,784 INFO Current addressing mode selection : FileConfigMemberLookup
+
+2021-04-25 16:27:25,803 WARN [serverlist] updated to : [Member{ip='nacos3', port=8848, state=DOWN, extendInfo={raftPort=7848}}, Member{ip='nacos2', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='nacos1', port=8848, state=DOWN, extendInfo={raftPort=7848}}]
+
+2021-04-25 16:27:44,642 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[Member{ip='nacos1', port=8848, state=DOWN, extendInfo={raftPort=7848}}, Member{ip='nacos3', port=8848, state=DOWN, extendInfo={raftPort=7848}}] 
+
+2021-04-25 16:28:20,441 INFO This node is ready to provide external services
+
+2021-04-25 16:28:27,443 ERROR failed to report new info to target node : nacos1:8848, error : caused: Connection refused;
+
+2021-04-25 16:28:30,445 ERROR failed to report new info to target node : nacos3:8848, error : caused: Timeout connecting to [nacos3/192.168.160.3:8848];
+
+2021-04-25 16:28:34,450 ERROR failed to report new info to target node : nacos3:8848, error : caused: Timeout connecting to [nacos3/192.168.160.3:8848];
+
+2021-04-25 16:28:38,455 ERROR failed to report new info to target node : nacos3:8848, error : caused: Timeout connecting to [nacos3/192.168.160.3:8848];
+
+2021-04-25 16:28:38,530 INFO start a new rpc client to member - > : Member{ip='nacos1', port=8848, state=UP, extendInfo={lastRefreshTime=1619339318519, raftMetaData={metaDataMap={nacos_config={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=2}, naming_instance_metadata={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=1}, naming_persistent_service={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=2}, naming_persistent_service_v2={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=1}, naming_service_metadata={leader=nacos2:7848, raftGroupMember=[nacos3:7848, nacos1:7848, nacos2:7848], term=1}}}, raftPort=7848, readyToUpgrade=true, version=2.0.0}}
+
+2021-04-25 16:28:42,461 ERROR failed to report new info to target node : nacos3:8848, error : caused: Timeout connecting to [nacos3/192.168.160.3:8848];
+
+2021-04-25 16:28:45,462 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:28:46,470 ERROR failed to report new info to target node : nacos3:8848, error : caused: Timeout connecting to [nacos3/192.168.160.3:8848];
+
+2021-04-25 16:28:49,468 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:28:53,440 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:28:57,455 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:01,462 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:05,468 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:09,474 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:13,480 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:17,485 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:21,494 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:25,469 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3: Name or service not known;
+
+2021-04-25 16:29:29,475 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:33,483 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:37,490 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:41,495 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:45,503 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:49,509 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:53,481 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:29:57,486 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:01,492 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:05,497 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:09,502 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:13,508 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:17,512 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:21,520 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:25,492 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:29,498 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:33,504 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:37,510 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:41,515 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:45,521 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:49,527 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:53,499 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:30:57,504 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:01,510 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:05,515 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:09,520 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:13,525 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:17,529 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:21,535 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:25,506 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:29,514 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:33,519 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:37,524 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:41,530 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:45,535 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:49,543 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3: Name or service not known;
+
+2021-04-25 16:31:53,514 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:31:57,519 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:32:01,525 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:32:05,529 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:32:09,534 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:32:13,540 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+
+2021-04-25 16:32:17,545 ERROR failed to report new info to target node : nacos3:8848, error : caused: nacos3;
+

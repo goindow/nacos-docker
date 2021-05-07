@@ -1,0 +1,96 @@
+2021-04-25 16:27:29,854 INFO Initializes the Raft protocol, raft-config info : {}
+
+2021-04-25 16:27:30,850 INFO ========= The raft protocol is starting... =========
+
+2021-04-25 16:27:33,416 INFO ========= The raft protocol start finished... =========
+
+2021-04-25 16:27:46,939 INFO create raft group : nacos_config
+
+2021-04-25 16:28:16,165 INFO This Raft event changes : RaftEvent{groupId='nacos_config', leader='nacos2:7848', term=1, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-25 16:28:16,338 ERROR Fail to refresh route configuration for group : nacos_config, status is : Status[UNKNOWN<-1>: handleRequest internal error]
+
+2021-04-25 16:28:16,365 ERROR Fail to refresh route configuration for group : nacos_config, status is : Status[UNKNOWN<-1>: handleRequest internal error]
+
+2021-04-25 16:28:16,386 ERROR Fail to refresh route configuration for group : nacos_config, status is : Status[UNKNOWN<-1>: handleRequest internal error]
+
+2021-04-25 16:28:16,506 INFO create raft group : naming_persistent_service
+
+2021-04-25 16:28:18,976 ERROR Fail to refresh route configuration for group : nacos_config, status is : Status[UNKNOWN<-1>: handleRequest internal error]
+
+2021-04-25 16:28:19,499 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service', leader='nacos2:7848', term=2, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-25 16:28:19,612 ERROR ReadIndex has error : No leader at term 1.
+
+2021-04-25 16:28:20,131 ERROR ReadIndex has error : No leader at term 1.
+
+2021-04-25 16:28:20,647 ERROR ReadIndex has error : No leader at term 1.
+
+2021-04-25 16:28:21,161 ERROR ReadIndex has error : No leader at term 1.
+
+2021-04-25 16:28:21,547 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:21,674 ERROR ReadIndex has error : No leader at term 1.
+
+2021-04-25 16:28:22,127 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:22,186 ERROR ReadIndex has error : No leader at term 1.
+
+2021-04-25 16:28:22,609 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:22,662 ERROR ReadIndex has error : No leader at term 1.
+
+2021-04-25 16:28:23,125 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:23,175 ERROR ReadIndex has error : No leader at term 1.
+
+2021-04-25 16:28:23,638 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:23,687 ERROR ReadIndex has error : No leader at term 1.
+
+2021-04-25 16:28:24,154 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:24,201 ERROR ReadIndex has error : No leader at term 1.
+
+2021-04-25 16:28:24,662 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:24,710 ERROR ReadIndex has error : No leader at term 1.
+
+2021-04-25 16:28:25,176 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:25,216 ERROR ReadIndex has error : No leader at term 1.
+
+2021-04-25 16:28:25,687 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:25,728 ERROR ReadIndex has error : No leader at term 1.
+
+2021-04-25 16:28:25,855 INFO This Raft event changes : RaftEvent{groupId='nacos_config', leader='nacos2:7848', term=2, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-25 16:28:25,873 ERROR ReadIndex has error : ReadIndex request rejected because leader has not committed any log entry at its term, logIndex=1, currTerm=2.
+
+2021-04-25 16:28:26,202 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:26,711 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:27,217 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:27,730 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:27,782 INFO create raft group : naming_persistent_service_v2
+
+2021-04-25 16:28:27,866 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-25 16:28:27,923 INFO create raft group : naming_instance_metadata
+
+2021-04-25 16:28:28,086 INFO create raft group : naming_service_metadata
+
+2021-04-25 16:28:31,612 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service_v2', leader='nacos2:7848', term=1, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-25 16:28:32,883 INFO This Raft event changes : RaftEvent{groupId='naming_instance_metadata', leader='nacos2:7848', term=1, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-25 16:28:33,208 ERROR Fail to refresh leader for group : naming_service_metadata, status is : Status[UNKNOWN<-1>: Fail to init channel to nacos3:7848, Unknown leader, Unknown leader]
+
+2021-04-25 16:28:33,218 ERROR Fail to refresh route configuration for group : naming_service_metadata, status is : Status[UNKNOWN<-1>: Fail to get leader of group naming_service_metadata]
+
+2021-04-25 16:28:33,483 INFO This Raft event changes : RaftEvent{groupId='naming_service_metadata', leader='nacos2:7848', term=1, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+

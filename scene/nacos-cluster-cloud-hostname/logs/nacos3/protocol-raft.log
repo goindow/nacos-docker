@@ -1,0 +1,142 @@
+2021-04-26 10:10:52,587 INFO Initializes the Raft protocol, raft-config info : {}
+
+2021-04-26 10:10:53,127 INFO ========= The raft protocol is starting... =========
+
+2021-04-26 10:10:53,753 INFO ========= The raft protocol start finished... =========
+
+2021-04-26 10:10:58,539 INFO create raft group : nacos_config
+
+2021-04-26 10:10:59,675 INFO create raft group : naming_persistent_service
+
+2021-04-26 10:11:03,913 ERROR Fail to refresh leader for group : nacos_config, status is : Status[UNKNOWN<-1>: Unknown leader, Unknown leader, Unknown leader]
+
+2021-04-26 10:11:03,940 ERROR Fail to refresh route configuration for group : nacos_config, status is : Status[UNKNOWN<-1>: Fail to get leader of group nacos_config]
+
+2021-04-26 10:11:04,593 INFO This Raft event changes : RaftEvent{groupId='nacos_config', leader='nacos2:7848', term=3, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-26 10:11:05,261 ERROR Fail to refresh leader for group : naming_persistent_service, status is : Status[UNKNOWN<-1>: Unknown leader, Unknown leader, Unknown leader]
+
+2021-04-26 10:11:05,594 ERROR Fail to refresh route configuration for group : naming_persistent_service, status is : Status[UNKNOWN<-1>: Fail to get leader of group naming_persistent_service]
+
+2021-04-26 10:11:05,713 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service', leader='nacos2:7848', term=3, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-26 10:11:06,731 INFO create raft group : naming_persistent_service_v2
+
+2021-04-26 10:11:07,585 INFO create raft group : naming_instance_metadata
+
+2021-04-26 10:11:07,898 INFO create raft group : naming_service_metadata
+
+2021-04-26 10:11:12,522 ERROR Fail to refresh leader for group : naming_persistent_service_v2, status is : Status[UNKNOWN<-1>: Unknown leader, Unknown leader, Unknown leader]
+
+2021-04-26 10:11:12,615 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service_v2', leader='nacos2:7848', term=2, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-26 10:11:12,955 ERROR Fail to refresh leader for group : naming_instance_metadata, status is : Status[UNKNOWN<-1>: Unknown leader, Unknown leader, Unknown leader]
+
+2021-04-26 10:11:13,047 ERROR Fail to refresh route configuration for group : naming_instance_metadata, status is : Status[UNKNOWN<-1>: Fail to get leader of group naming_instance_metadata]
+
+2021-04-26 10:11:13,134 ERROR Fail to refresh leader for group : naming_service_metadata, status is : Status[UNKNOWN<-1>: Unknown leader, Unknown leader, Unknown leader]
+
+2021-04-26 10:11:13,213 ERROR Fail to refresh route configuration for group : naming_service_metadata, status is : Status[UNKNOWN<-1>: Fail to get leader of group naming_service_metadata]
+
+2021-04-26 10:11:13,765 INFO This Raft event changes : RaftEvent{groupId='naming_service_metadata', leader='nacos2:7848', term=2, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-26 10:11:14,075 INFO This Raft event changes : RaftEvent{groupId='naming_instance_metadata', leader='nacos2:7848', term=2, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-26 10:25:12,824 INFO Initializes the Raft protocol, raft-config info : {}
+
+2021-04-26 10:25:13,169 INFO ========= The raft protocol is starting... =========
+
+2021-04-26 10:25:13,959 INFO ========= The raft protocol start finished... =========
+
+2021-04-26 10:25:13,979 INFO create raft group : naming_persistent_service
+
+2021-04-26 10:25:16,525 INFO shutdown jraft server
+
+2021-04-26 10:25:16,527 INFO ========= The raft protocol is starting to close =========
+
+2021-04-26 10:25:16,643 INFO ========= The raft protocol has been closed =========
+
+2021-04-26 10:28:37,303 INFO Initializes the Raft protocol, raft-config info : {}
+
+2021-04-26 10:28:37,552 INFO ========= The raft protocol is starting... =========
+
+2021-04-26 10:28:38,111 INFO ========= The raft protocol start finished... =========
+
+2021-04-26 10:28:38,131 INFO create raft group : naming_persistent_service
+
+2021-04-26 10:28:40,266 INFO shutdown jraft server
+
+2021-04-26 10:28:40,268 INFO ========= The raft protocol is starting to close =========
+
+2021-04-26 10:28:40,324 INFO ========= The raft protocol has been closed =========
+
+2021-04-26 11:00:07,676 INFO Initializes the Raft protocol, raft-config info : {}
+
+2021-04-26 11:00:08,040 INFO ========= The raft protocol is starting... =========
+
+2021-04-26 11:00:08,525 INFO ========= The raft protocol start finished... =========
+
+2021-04-26 11:00:12,865 INFO create raft group : nacos_config
+
+2021-04-26 11:00:14,049 INFO create raft group : naming_persistent_service
+
+2021-04-26 11:00:17,674 INFO This Raft event changes : RaftEvent{groupId='nacos_config', leader='nacos2:7848', term=4, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-26 11:00:18,322 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service', leader='nacos2:7848', term=4, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-26 11:00:19,826 INFO create raft group : naming_persistent_service_v2
+
+2021-04-26 11:00:20,121 INFO create raft group : naming_instance_metadata
+
+2021-04-26 11:00:20,428 INFO create raft group : naming_service_metadata
+
+2021-04-26 11:00:25,356 ERROR Fail to refresh leader for group : naming_persistent_service_v2, status is : Status[UNKNOWN<-1>: Unknown leader, Unknown leader, Unknown leader]
+
+2021-04-26 11:00:25,574 ERROR Fail to refresh route configuration for group : naming_persistent_service_v2, status is : Status[UNKNOWN<-1>: Fail to get leader of group naming_persistent_service_v2]
+
+2021-04-26 11:00:25,641 ERROR Fail to refresh leader for group : naming_instance_metadata, status is : Status[UNKNOWN<-1>: Unknown leader, Unknown leader, Unknown leader]
+
+2021-04-26 11:00:25,685 ERROR Fail to refresh route configuration for group : naming_instance_metadata, status is : Status[UNKNOWN<-1>: Fail to get leader of group naming_instance_metadata]
+
+2021-04-26 11:00:26,189 ERROR Fail to refresh leader for group : naming_service_metadata, status is : Status[UNKNOWN<-1>: Unknown leader, Unknown leader, Unknown leader]
+
+2021-04-26 11:00:26,245 ERROR Fail to refresh route configuration for group : naming_service_metadata, status is : Status[UNKNOWN<-1>: Fail to get leader of group naming_service_metadata]
+
+2021-04-26 11:00:26,831 INFO This Raft event changes : RaftEvent{groupId='naming_service_metadata', leader='nacos2:7848', term=3, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-26 11:00:26,999 INFO This Raft event changes : RaftEvent{groupId='naming_instance_metadata', leader='nacos3:7848', term=3, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-26 11:00:30,140 ERROR Fail to refresh leader for group : naming_persistent_service_v2, status is : Status[UNKNOWN<-1>: Unknown leader, Unknown leader, Unknown leader]
+
+2021-04-26 11:00:30,181 ERROR Fail to refresh route configuration for group : naming_persistent_service_v2, status is : Status[UNKNOWN<-1>: Fail to get leader of group naming_persistent_service_v2]
+
+2021-04-26 11:00:35,218 ERROR Fail to refresh leader for group : naming_persistent_service_v2, status is : Status[UNKNOWN<-1>: Unknown leader, Unknown leader, Unknown leader]
+
+2021-04-26 11:00:35,227 ERROR Fail to refresh route configuration for group : naming_persistent_service_v2, status is : Status[UNKNOWN<-1>: Fail to get leader of group naming_persistent_service_v2]
+
+2021-04-26 11:00:36,762 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service_v2', leader='nacos1:7848', term=4, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-26 11:03:06,520 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-26 11:03:08,532 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-26 11:03:09,473 INFO This Raft event changes : RaftEvent{groupId='nacos_config', leader='nacos1:7848', term=5, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-26 11:03:09,512 ERROR ReadIndex has error : RPC exception:DEADLINE_EXCEEDED: deadline exceeded after 4995916005ns. [buffered_nanos=4996108891, waiting_for_connection]
+
+2021-04-26 11:03:09,815 ERROR Fail to refresh route configuration for group : naming_persistent_service, status is : Status[UNKNOWN<-1>: io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4998353963ns. [buffered_nanos=4998511196, waiting_for_connection]]
+
+2021-04-26 11:03:10,184 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service', leader='nacos1:7848', term=5, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-26 11:03:10,339 ERROR ReadIndex has error : read-index request timeout
+
+2021-04-26 11:03:11,511 ERROR ReadIndex has error : RPC exception:DEADLINE_EXCEEDED: deadline exceeded after 4999949312ns. [buffered_nanos=5000087359, waiting_for_connection]
+
+2021-04-26 11:03:11,586 ERROR Fail to refresh route configuration for group : nacos_config, status is : Status[UNKNOWN<-1>: null]
+
+2021-04-26 11:03:11,990 INFO This Raft event changes : RaftEvent{groupId='naming_service_metadata', leader='nacos3:7848', term=4, raftClusterInfo=[nacos3:7848, nacos1:7848, nacos2:7848]}
+
+2021-04-26 11:03:13,338 ERROR ReadIndex has error : RPC exception:DEADLINE_EXCEEDED: deadline exceeded after 4999928787ns. [buffered_nanos=5000098084, waiting_for_connection]
+
+2021-04-26 11:03:13,647 ERROR Fail to refresh route configuration for group : naming_service_metadata, status is : Status[UNKNOWN<-1>: null]
+

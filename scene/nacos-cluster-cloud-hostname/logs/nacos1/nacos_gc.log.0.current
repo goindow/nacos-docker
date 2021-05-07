@@ -1,0 +1,15 @@
+OpenJDK 64-Bit Server VM (25.282-b08) for linux-amd64 JRE (1.8.0_282-b08), built on Jan 22 2021 15:39:19 by "mockbuild" with gcc 4.8.5 20150623 (Red Hat 4.8.5-44)
+Memory: 4k page, physical 3075476k(2634376k free), swap 1048572k(893152k free)
+CommandLine flags: -XX:CompressedClassSpaceSize=327155712 -XX:GCLogFileSize=104857600 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/nacos/logs/java_heapdump.hprof -XX:InitialHeapSize=1073741824 -XX:MaxHeapSize=1073741824 -XX:MaxMetaspaceSize=335544320 -XX:MaxNewSize=536870912 -XX:MetaspaceSize=134217728 -XX:NewSize=536870912 -XX:NumberOfGCLogFiles=10 -XX:-OmitStackTraceInFastThrow -XX:+PrintGC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseGCLogFileRotation -XX:-UseLargePages -XX:+UseParallelGC 
+2021-04-26T10:59:53.677+0800: 2.272: [GC (Allocation Failure) [PSYoungGen: 393216K->14714K(458752K)] 393216K->14786K(983040K), 0.0503536 secs] [Times: user=0.02 sys=0.04, real=0.07 secs] 
+2021-04-26T10:59:57.487+0800: 6.082: [GC (Allocation Failure) [PSYoungGen: 407930K->17720K(458752K)] 408002K->17808K(983040K), 0.1477035 secs] [Times: user=0.14 sys=0.04, real=0.15 secs] 
+2021-04-26T10:59:59.602+0800: 8.197: [GC (Allocation Failure) [PSYoungGen: 410936K->45300K(458752K)] 411024K->45396K(983040K), 0.2732053 secs] [Times: user=0.36 sys=0.02, real=0.27 secs] 
+2021-04-26T11:00:01.288+0800: 9.883: [GC (Allocation Failure) [PSYoungGen: 438516K->49597K(458752K)] 438612K->49693K(983040K), 0.0973824 secs] [Times: user=0.15 sys=0.00, real=0.10 secs] 
+2021-04-26T11:00:02.488+0800: 11.083: [GC (Allocation Failure) [PSYoungGen: 442813K->49225K(442880K)] 442909K->49329K(967168K), 0.1121335 secs] [Times: user=0.11 sys=0.01, real=0.12 secs] 
+2021-04-26T11:00:03.953+0800: 12.548: [GC (Allocation Failure) [PSYoungGen: 442441K->56969K(442880K)] 442545K->57081K(967168K), 0.1038817 secs] [Times: user=0.14 sys=0.01, real=0.11 secs] 
+2021-04-26T11:00:06.036+0800: 14.631: [GC (Allocation Failure) [PSYoungGen: 432777K->29600K(450048K)] 432889K->41880K(974336K), 0.0492576 secs] [Times: user=0.08 sys=0.00, real=0.05 secs] 
+2021-04-26T11:00:08.595+0800: 17.190: [GC (Allocation Failure) [PSYoungGen: 405408K->25265K(454656K)] 417688K->46522K(978944K), 0.0771474 secs] [Times: user=0.08 sys=0.01, real=0.08 secs] 
+2021-04-26T11:00:13.324+0800: 21.940: [GC (GCLocker Initiated GC) [PSYoungGen: 408753K->29696K(453120K)] 430034K->58692K(977408K), 0.0460482 secs] [Times: user=0.10 sys=0.00, real=0.04 secs] 
+2021-04-26T11:00:18.531+0800: 27.147: [GC (Allocation Failure) [PSYoungGen: 413184K->33794K(459776K)] 442184K->73796K(984064K), 0.0655799 secs] [Times: user=0.12 sys=0.00, real=0.06 secs] 
+2021-04-26T11:00:25.712+0800: 34.329: [GC (Allocation Failure) [PSYoungGen: 426498K->22568K(457216K)] 466500K->93350K(981504K), 0.3404204 secs] [Times: user=0.41 sys=0.16, real=0.34 secs] 
+2021-04-26T11:03:26.278+0800: 215.021: [GC (Allocation Failure) [PSYoungGen: 415272K->25152K(462336K)] 486054K->110738K(986624K), 0.0894096 secs] [Times: user=0.07 sys=0.16, real=0.09 secs] 
