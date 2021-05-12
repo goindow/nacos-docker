@@ -6,8 +6,8 @@
 /scene/nacos-cluster-cloud-hostname/logs/*
 /scene/nacos-cluster-cloud-ip/data/*
 /scene/nacos-cluster-cloud-ip/logs/*
-/scene/nacos-cluster-cloud-ecs/*/data/*
-/scene/nacos-cluster-cloud-ecs/*/logs/*
+/scene/nacos-cluster-ecs/*/data/*
+/scene/nacos-cluster-ecs/*/logs/*
 /scene/nacos-standalone/data/*
 /scene/nacos-standalone/logs/*
 /nacos-docker/data/*
@@ -17,8 +17,8 @@
 !/scene/nacos-cluster-cloud-hostname/logs/.gitkeep
 !/scene/nacos-cluster-cloud-ip/data/.gitkeep
 !/scene/nacos-cluster-cloud-ip/logs/.gitkeep
-!/scene/nacos-cluster-cloud-ecs/*/data/.gitkeep
-!/scene/nacos-cluster-cloud-ecs/*/logs/.gitkeep
+!/scene/nacos-cluster-ecs/*/data/.gitkeep
+!/scene/nacos-cluster-ecs/*/logs/.gitkeep
 !/scene/nacos-standalone/data/.gitkeep
 !/scene/nacos-standalone/logs/.gitkeep
 !/nacos-docker/data/.gitkeep
