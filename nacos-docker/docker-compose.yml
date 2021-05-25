@@ -8,7 +8,7 @@ services:
 #      - "9848:9848"    # port+1000 gRPC client -> server
 #      - "9849:9849"    # port+1001 gRPC server <-> server，集群同步端口
 #      - "7848:7848"    # port-1000 jRaft server <-> server，集群选举端口（如果集群的 NACOS_SERVER_IP & NACOS_SERVERS 指定的是 docker 容器内同一个网络地址则不需要映射，否则需要）
-  volumes:
+    volumes:
       - ./conf/custom.properties:/home/nacos/init.d/custom.properties    # 自定义配置
       - ./data:/home/nacos/data    # 持久化（使用内嵌分布式数据库）
       - ./logs:/home/nacos/logs
