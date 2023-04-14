@@ -11,7 +11,7 @@ services:
       - "8848:8848"    # port HTTP client -> server
 #      - "9848:9848"    # port+1000 gRPC client -> server
     volumes:
-      - ./conf/application.properties:/home/nacos/init.d/application.properties    # 配置
+      - ./conf/application.properties:/home/nacos/conf/application.properties    # 配置
       - ./data/nacos1:/home/nacos/data    # 持久化（使用内嵌分布式数据库）
       - ./logs/nacos1:/home/nacos/logs
 #      - /etc/localtime:/etc/localtime
@@ -29,7 +29,7 @@ services:
       - "8849:8848"    # port HTTP client -> server
 #      - "9849:9848"    # port+1000 gRPC client -> server
     volumes:
-      - ./conf/application.properties:/home/nacos/init.d/application.properties    # 配置
+      - ./conf/application.properties:/home/nacos/conf/application.properties    # 配置
       - ./data/nacos2:/home/nacos/data    # 持久化（使用内嵌分布式数据库）
       - ./logs/nacos2:/home/nacos/logs
 #      - /etc/localtime:/etc/localtime
@@ -47,7 +47,7 @@ services:
       - "8850:8848"    # port HTTP client -> server
 #      - "9849:9848"    # port+1000 gRPC client -> server
     volumes:
-      - ./conf/application.properties:/home/nacos/init.d/application.properties    # 配置
+      - ./conf/application.properties:/home/nacos/conf/application.properties    # 配置
       - ./data/nacos3:/home/nacos/data    # 持久化（使用内嵌分布式数据库）
       - ./logs/nacos3:/home/nacos/logs
 #      - /etc/localtime:/etc/localtime
