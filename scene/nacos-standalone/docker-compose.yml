@@ -7,7 +7,7 @@ services:
       - "8848:8848"    # port HTTP client -> server
 #      - "9848:9848"    # port+1000 gRPC client -> server
     volumes:
-      - ./conf/custom.properties:/home/nacos/init.d/custom.properties    # 自定义配置
+      - ./conf/application.properties:/home/nacos/init.d/application.properties    # 配置
       - ./data:/home/nacos/data    # 持久化（使用内嵌分布式数据库）
       - ./logs:/home/nacos/logs
 #      - /etc/localtime:/etc/localtime
@@ -15,4 +15,11 @@ services:
     environment:
       # 更多环境变量参考，https://hub.fastgit.org/nacos-group/nacos-docker/blob/master/README_ZH.md         
       - MODE=standalone
+      # 持久化
       - EMBEDDED_STORAGE=embedded       # 使用内嵌分布式数据库持久化
+      # 权限
+      - NACOS_AUTH_ENABLE=false
+      - NACOS_AUTH_USER_AGENT_AUTH_WHITE_ENABLE=false
+      - NACOS_AUTH_IDENTITY_KEY=bwyjpre
+      - NACOS_AUTH_IDENTITY_VALUE=Zhujia2023!@#2023
+      - NACOS_AUTH_TOKEN=012345678901234567890123456789012345678901234567890123456666
