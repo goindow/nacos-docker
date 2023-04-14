@@ -2,7 +2,6 @@
 基于 nacos-docker 镜像的 docker-compose 快速部署脚手架，使用内嵌数据库存储，支持单体和集群模式
 
 ## 目录说明
-- source/，相关项目演进源码（无需关心）
 - nacos-docker/，docker-compose 部署模板
 - scene/，各场景用例（找到相应场景用例，直接下载使用）
 
