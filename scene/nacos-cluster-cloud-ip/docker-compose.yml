@@ -3,7 +3,7 @@ version: '2'
 services:
   nacos1:
     hostname: nacos1
-    image: "nacos/nacos-server:2.0.0"
+    image: "nacos/nacos-server:v2.2.1-slim"
     networks:
       nacos_net:
         ipv4_address: 192.168.100.11
@@ -11,7 +11,7 @@ services:
       - "8848:8848"    # port HTTP client -> server
 #      - "9848:9848"    # port+1000 gRPC client -> server
     volumes:
-      - ./conf/custom.properties:/home/nacos/init.d/custom.properties    # 自定义配置
+      - ./conf/application.properties:/home/nacos/init.d/application.properties    # 配置
       - ./data/nacos1:/home/nacos/data    # 持久化（使用内嵌分布式数据库）
       - ./logs/nacos1:/home/nacos/logs
 #      - /etc/localtime:/etc/localtime
@@ -21,7 +21,7 @@ services:
 
   nacos2:
     hostname: nacos2
-    image: "nacos/nacos-server:2.0.0"
+    image: "nacos/nacos-server:v2.2.1-slim"
     networks:
       nacos_net:
         ipv4_address: 192.168.100.12
@@ -29,7 +29,7 @@ services:
       - "8849:8848"    # port HTTP client -> server
 #      - "9849:9848"    # port+1000 gRPC client -> server
     volumes:
-      - ./conf/custom.properties:/home/nacos/init.d/custom.properties    # 自定义配置
+      - ./conf/application.properties:/home/nacos/init.d/application.properties    # 配置
       - ./data/nacos2:/home/nacos/data    # 持久化（使用内嵌分布式数据库）
       - ./logs/nacos2:/home/nacos/logs
 #      - /etc/localtime:/etc/localtime
@@ -39,7 +39,7 @@ services:
 
   nacos3:
     hostname: nacos3
-    image: "nacos/nacos-server:2.0.0"
+    image: "nacos/nacos-server:v2.2.1-slim"
     networks:
       nacos_net:
         ipv4_address: 192.168.100.13
@@ -47,7 +47,7 @@ services:
       - "8850:8848"    # port HTTP client -> server
 #      - "9849:9848"    # port+1000 gRPC client -> server
     volumes:
-      - ./conf/custom.properties:/home/nacos/init.d/custom.properties    # 自定义配置
+      - ./conf/application.properties:/home/nacos/init.d/application.properties    # 配置
       - ./data/nacos3:/home/nacos/data    # 持久化（使用内嵌分布式数据库）
       - ./logs/nacos3:/home/nacos/logs
 #      - /etc/localtime:/etc/localtime
